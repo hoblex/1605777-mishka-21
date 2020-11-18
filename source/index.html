@@ -8,9 +8,7 @@
 <body class="page-body">
 <header class="page-header">
   <h1 class="visually-hidden">Сайт магазина Мишка</h1>
-  <a href="blank.html"  class="page-header__logo">
-    <img src="https://via.placeholder.com/86x35" alt="Магазин ми-ми-Мишка"  width="86"  height="35" class="page-header__logo-image">
-  </a>
+  <img src="https://via.placeholder.com/86x35" alt="Магазин ми-ми-Мишка"  width="86"  height="35" class="page-header__logo-image">
   <nav  class="header-nav">
     <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="header-nav__wrapper">
@@ -29,6 +27,7 @@
         </label>
       </form>
       <a  href="blank.html" class="header-nav__cart-link"><span class="header-nav__cart-name">Корзина:</span><span  class="header-nav__cart-count">пока пуста</span></a>
+      <span class="header-delivery-info">Бесплатная доставка по России</span>
     </div>
   </nav>
 </header>
@@ -44,83 +43,83 @@
     </div>
   </section>
   <section  class="product-main">
-    <h2 class="product-main__header">Товар недели</h2>
-    <p  class="product-main__title">Вязаные корзинки</p>
+    <h2  class="product-main__header common-header">Вязаные корзинки</h2>
+    <p class="product-main__label">Товар недели</p>
     <p  class="product-main__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
     <dl class="product-main__table">
-      <dt class="product-main__table-title">Цвет:
-      <dd class="product-main__table-desc">"Тиффани"/серый
-      <dt class="product-main__table-title">Диаметр:
-      <dd class="product-main__table-desc">25см
-      <dt class="product-main__table-title">Высота
-      <dd class="product-main__table-desc">15см
+      <dt class="product-main__table-title">Цвет:</dt>
+      <dd class="product-main__table-desc">"Тиффани"/серый</dd>
+      <dt class="product-main__table-title">Диаметр:</dt>
+      <dd class="product-main__table-desc">25см</dd>
+      <dt class="product-main__table-title">Высота</dt>
+      <dd class="product-main__table-desc">15см</dd>
     </dl>
     <img src="https://via.placeholder.com/260x315" alt="Вязаные корзинки"  width="260"  height="315" class="product-main__image">
-    <div class="product-main__price">Цена: 990 руб.</div>
+    <span class="product-main__price">Цена: 990 руб.</span>
     <a class="regular-button product-main__order-link">Заказать</a>
   </section>
   <article  class="desc-main">
-    <h2 class="desc-main__header">Коротко о нас:</h2>
+    <h2 class="desc-main__header common-header">Коротко о нас:</h2>
     <ul class="desc-main__list">
-      <li class="desc-main__list-item">Экологически чистые материалы</li>
-      <li class="desc-main__list-item">Скандинавский стиль по российской цене</li>
-      <li class="desc-main__list-item">Увеличивает лайки на фотографиях</li>
-      <li class="desc-main__list-item">Связано вручную с любовью и умилением</li>
-      <li class="desc-main__list-item">Поддержка отечественного производителя</li>
-      <li class="desc-main__list-item">Поставляется в подарочной упаковке</li>
+      <li class="desc-main__list-item_ecology">Экологически чистые материалы</li>
+      <li class="desc-main__list-item_scandinavian">Скандинавский стиль по российской цене</li>
+      <li class="desc-main__list-item_likes">Увеличивает лайки на фотографиях</li>
+      <li class="desc-main__list-item_knitting">Связано вручную с любовью и умилением</li>
+      <li class="desc-main__list-item_domestic">Поддержка отечественного производителя</li>
+      <li class="desc-main__list-item_packaging">Поставляется в подарочной упаковке</li>
     </ul>
   </article>
-  <section  class="reviews-main">
-    <h2 class="reviews-header">Отзывы</h2>
-    <div class="reviews-slider">
-      <div class="reviews-slider__item">
-        <p  class="reviews-slider__item-text">Я двоюродная сестра молодой мамы, но всё равно
+  <section  class="reviews">
+    <h2 class="reviews__header common-header">Отзывы</h2>
+    <div class="reviews__slider slider">
+      <div class="reviews__item slider__item">
+        <p  class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно
           фотографии не набирали и близко такого количества лайков, как у популярных
           инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии
           сразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="reviews-slider__item-author">Елена Красильникова @misssssiskras3</cite>
+        <cite class="reviews__author-name">Елена Красильникова <span class="reviews__author-nick">@misssssiskras3</span></cite>
       </div>
-      <div class="reviews-slider__item">
-        <p  class="reviews-slider__item-text">Я сестра молодой мамы, но всё равно фотографии не набирали
+      <div class="reviews__item slider__item">
+        <p  class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали
           и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
           и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
           больше лайков!</p>
-        <cite class="reviews-slider__item-author">Екатерина Красильникова @misssssiskras2</cite>
+        <cite class="reviews__author-nick">Екатерина Красильникова <span class="reviews__author-nick">@misssssiskras2</span></cite>
       </div>
-      <div class="reviews-slider__item">
-        <p  class="reviews-slider__item-_text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+      <div class="reviews__item slider__item">
+        <p  class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
           у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
           и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="reviews-slider__item-author">Анастасия Красильникова @misssssiskras1</cite>
+        <cite class="reviews__author-nick">Анастасия Красильникова <span class="reviews__author-nick">@misssssiskras1</span></cite>
       </div>
-      <div  class="reviews-slider__nav">
-        <button type="button" class="prev" aria-label="Назад">Назад</button>
-        <button type="button" class="next" aria-label="Вперед">Вперед</button>
+      <div  class="reviews__nav  slider-nav">
+        <button type="button" class="slider-nav__button-prev" aria-label="Назад">Назад</button>
+        <button type="button" class="slider-nav__button-prev" aria-label="Вперед">Вперед</button>
       </div>
     </div>
-    <a class="regular-button reviews-main__feedback-link">Написать</a>
+    <a class="regular-button reviews__feedback-button">Написать</a>
   </section>
-  <section class="contacts-container">
-    <h2 class="contacts-header">Контакты</h2>
-    <p class="contacts-email-header">e-mail:<a   class="contacts-email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-    <p class="contacts-address-header">адрес:<span class="contacts-address-content">г.&nbsp;Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис&nbsp;101</span></p>
-    <a  class="contacts-map-link"  href="blank.html"><img src="https://via.placeholder.com/320x454" alt="Карта. Как нас найти" width="320" height="454"></a>
-    <a class="regular-button contacts-button" href="blank.html">Заблудились? Напишите нам!</a>
+  <section class="contacts">
+    <h2 class="contacts__header">Контакты</h2>
+    <p class="contacts__data email-header">e-mail:<a   class="contacts__data  email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+    <p class="contacts__data address-header">адрес:<span class="contacts__data  address-content">г.&nbsp;Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис&nbsp;101</span></p>
+    <a  class="contacts__map-link"  href="blank.html"><img src="https://via.placeholder.com/320x454" alt="Карта. Как нас найти" width="320" height="454"></a>
+    <a class="regular-button contacts__button" href="blank.html">Напишите нам</a>
   </section>
   <footer class="footer-main">
     <a href="blank.html"  class="footer-main__logo">
       <img src="https://via.placeholder.com/86x35" alt="Магазин ми-ми-Мишка"  width="86"  height="35" class="footer-main__logo-image">
     </a>
-    <div class="footer-main-social-list">
+    <div class="social-list">
       <h3 class="visually-hidden">Наши странички в соцсетях</h3>
-      <div  class="footer-main-social-list__item">
-        <a href="blank.html" aria-label="Вконтакте" class="footer-main-social-list__item-vk">Вк</a>
+      <div  class="social-list__item">
+        <a href="blank.html" aria-label="Вконтакте" class="social-list__item-vk">Вк</a>
       </div>
-      <div  class="footer-main-social-list__item">
-        <a href="blank.html" aria-label="Фейсбук" class="footer-main-social-list__item-fb">Фейсбук</a>
+      <div  class="social-list__item">
+        <a href="blank.html" aria-label="Фейсбук" class="social-list__item-fb">Фейсбук</a>
       </div>
-      <div  class="footer-main-social-list__item">
-        <a href="blank.html" aria-label="Инстаграм" class="footer-main-social-list__item-insta">Инстаграм</a>
+      <div  class="social-list__item">
+        <a href="blank.html" aria-label="Инстаграм" class="social-list__item-insta">Инстаграм</a>
       </div>
     </div>
     <div  class="footer-main-copyright">
@@ -130,14 +129,14 @@
 </main>
 <section  class="modal-cart">
   <h3 class="modal-cart__header">Добавить в корзину</h3>
-  <form action="https://echo.htmlacademy.ru"  method="get"  class="modal-cart__form">
-    <fieldset class="modal-cart-form-fieldset">
-      <legend class="modal-cart-form-fieldset__title">Выберите размер:</legend>
-      <label  class="modal-cart-form-fieldset__label"><input type="checkbox" class="modal-cart-form-fieldset__checkbox"  name="size-s">S</label>
-      <label  class="modal-cart-form-fieldset__label"><input type="checkbox" class="modal-cart-form-fieldset__checkbox"  name="size-m">M</label>
-      <label  class="modal-cart-form-fieldset__label"><input type="checkbox" class="modal-cart-form-fieldset__checkbox"  name="size-l">L</label>
+  <form action="https://echo.htmlacademy.ru"  method="get"  class="modal-cart__form form-size">
+    <fieldset class="form-size__fieldset">
+      <legend class="form-size__title">Выберите размер:</legend>
+      <label  class="form-size__label"><input type="checkbox" class="form-size__checkbox"  name="size-s">S</label>
+      <label  class="form-size__label"><input type="checkbox" class="form-size__checkbox"  name="size-m">M</label>
+      <label  class="form-size__label"><input type="checkbox" class="form-size__checkbox"  name="size-l">L</label>
     </fieldset>
-    <button class="modal-cart__form-button-submit"  type="submit">Добавить</button>
+    <button class="form-size__submit"  type="submit">Добавить</button>
   </form>
 </section>
 </body>
