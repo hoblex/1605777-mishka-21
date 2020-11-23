@@ -23,11 +23,11 @@
           <svg class="header-nav__form-icon" width="18" height="18">
             <use xlink:href="https://via.placeholder.com/18x18"></use>
           </svg>
-          <input class="header-nav__form-search__input" type="search" placeholder="Поиск:" name="search-in-site"/>
+          <input class="header-nav__form-input" type="search" placeholder="Поиск:" name="search-in-site"/>
         </label>
       </form>
       <a  href="blank.html" class="header-nav__cart-link"><span class="header-nav__cart-name">Корзина:</span><span  class="header-nav__cart-count">пока пуста</span></a>
-      <span class="header-delivery-info">Бесплатная доставка по России</span>
+      <span class="header-nav__delivery-info">Бесплатная доставка по России</span>
     </div>
   </nav>
 </header>
@@ -61,12 +61,12 @@
   <article  class="desc-main">
     <h2 class="desc-main__header common-header">Коротко о нас:</h2>
     <ul class="desc-main__list">
-      <li class="desc-main__list-item_ecology">Экологически чистые материалы</li>
-      <li class="desc-main__list-item_scandinavian">Скандинавский стиль по российской цене</li>
-      <li class="desc-main__list-item_likes">Увеличивает лайки на фотографиях</li>
-      <li class="desc-main__list-item_knitting">Связано вручную с любовью и умилением</li>
-      <li class="desc-main__list-item_domestic">Поддержка отечественного производителя</li>
-      <li class="desc-main__list-item_packaging">Поставляется в подарочной упаковке</li>
+      <li class="desc-main__list-item desc-main__list-item--ecology">Экологически чистые материалы</li>
+      <li class="desc-main__list-item desc-main__list-item--scandinavian">Скандинавский стиль по российской цене</li>
+      <li class="desc-main__list-item desc-main__list-item--likes">Увеличивает лайки на фотографиях</li>
+      <li class="desc-main__list-item desc-main__list-item--knitting">Связано вручную с любовью и умилением</li>
+      <li class="desc-main__list-item desc-main__list-item--domestic">Поддержка отечественного производителя</li>
+      <li class="desc-main__list-item desc-main__list-item--packaging">Поставляется в подарочной упаковке</li>
     </ul>
   </article>
   <section  class="reviews">
@@ -92,17 +92,17 @@
           и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
         <cite class="reviews__author-nick">Анастасия Красильникова <span class="reviews__author-nick">@misssssiskras1</span></cite>
       </div>
-      <div  class="reviews__nav  slider-nav">
+      <div  class="reviews__nav slider-nav">
         <button type="button" class="slider-nav__button-prev" aria-label="Назад">Назад</button>
-        <button type="button" class="slider-nav__button-prev" aria-label="Вперед">Вперед</button>
+        <button type="button" class="slider-nav__button-next" aria-label="Вперед">Вперед</button>
       </div>
     </div>
     <a class="regular-button reviews__feedback-button">Написать</a>
   </section>
   <section class="contacts">
     <h2 class="contacts__header">Контакты</h2>
-    <p class="contacts__data email-header">e-mail:<a   class="contacts__data  email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-    <p class="contacts__data address-header">адрес:<span class="contacts__data  address-content">г.&nbsp;Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис&nbsp;101</span></p>
+    <p class="contacts__email-header">e-mail:<a   class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+    <p class="contacts__address-header">адрес:<span class="contacts__address-content">г.&nbsp;Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис&nbsp;101</span></p>
     <a  class="contacts__map-link"  href="blank.html"><img src="https://via.placeholder.com/320x454" alt="Карта. Как нас найти" width="320" height="454"></a>
     <a class="regular-button contacts__button" href="blank.html">Напишите нам</a>
   </section>
@@ -113,13 +113,13 @@
     <div class="social-list">
       <h3 class="visually-hidden">Наши странички в соцсетях</h3>
       <div  class="social-list__item">
-        <a href="blank.html" aria-label="Вконтакте" class="social-list__item-vk">Вк</a>
+        <a href="blank.html" aria-label="Вконтакте" class="social-list__link social-list__link--vk">Вк</a>
       </div>
       <div  class="social-list__item">
-        <a href="blank.html" aria-label="Фейсбук" class="social-list__item-fb">Фейсбук</a>
+        <a href="blank.html" aria-label="Фейсбук" class="social-list__link social-list__link--fb">Фейсбук</a>
       </div>
       <div  class="social-list__item">
-        <a href="blank.html" aria-label="Инстаграм" class="social-list__item-insta">Инстаграм</a>
+        <a href="blank.html" aria-label="Инстаграм" class="social-list__link social-list__link--insta">Инстаграм</a>
       </div>
     </div>
     <div  class="footer-main-copyright">
