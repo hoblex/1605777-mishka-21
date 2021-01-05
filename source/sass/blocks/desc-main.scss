@@ -1,0 +1,118 @@
+.desc-main {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 758px;
+}
+
+.desc-main__list {
+  @include list-drop-style;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 671px;
+}
+
+.desc-main__list-item {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+
+  &--ecology {
+    height: 94px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 33px;
+      height: 38px;
+      top: 0;
+      left: 8px;
+      background-image: url("../../img/icon-ecology.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--scandinavian {
+    height: 93px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 27px;
+      top: 0;
+      left: 0;
+      background-image: url("../../img/icon-scandinavian.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--likes {
+    height: 88px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 27px;
+      top: 0;
+      left: 7px;
+      background-image: url("../../img/icon-likes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--knitting {
+    height: 91px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 34px;
+      top: 0;
+      left: 3px;
+      background-image: url("../../img/icon-knitting.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--domestic {
+    height: 89px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 23px;
+      top: 0;
+      left: -6px;
+      background-image: url("../../img/icon-domestic.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--packaging {
+    height: 92px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 33px;
+      height: 32px;
+      top: 0;
+      left: 3px;
+      background-image: url("../../img/icon-packaging.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

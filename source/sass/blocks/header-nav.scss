@@ -1,0 +1,28 @@
+.header-nav {
+  margin: 0;
+  padding: 30px;
+  line-height: 24px;
+}
+
+.header-nav__form {
+  font-weight: bold;
+}
+
+.header-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.header-nav__list {
+  @include list-drop-style;
+}
+
+.header-nav__cart-link {
+  font-weight: bold;
+  color: $basic-black;
+}
+
+.header-nav__delivery-info {
+  color: $primary-color;
+}

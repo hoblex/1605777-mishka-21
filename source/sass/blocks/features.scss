@@ -1,0 +1,65 @@
+.features {
+  width: 568px;
+  height: 373px;
+  background-image: url("../../img/hero-mobile.png");
+  background-repeat: no-repeat;
+}
+
+.features__wrapper {
+  width: 260px;
+}
+
+.features__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.features-list {
+  @include list-drop-style;
+  color: $basic-white;
+  font-weight: bold;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.features-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 103px;
+  background-color: $style-color;
+
+  a {
+    color: $basic-white;
+    font-weight: bold;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--interior {
+    a::after {
+      content: "";
+      width: 40px;
+      height: 62px;
+      background-image: url("../../img/interior.svg");
+    }
+  }
+
+  &--toy {
+    background-color: $style-color-additional;
+
+    a::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/toy.svg");
+    }
+  }
+}

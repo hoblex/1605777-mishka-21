@@ -3,19 +3,19 @@
 <head class="page">
   <meta charset="utf-8">
   <title>HTML Academy: Мишка. Каталог</title>
-  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
 <header class="page-header">
   <h1 class="visually-hidden">Каталог товаров</h1>
   <a  class="page-header__logo-link" href="index.html" aria-label="Главная страница">
-    <img  class="page-header__logo-image" src="https://via.placeholder.com/86x35" alt="Магазин ми-ми-Мишка" width="86" height="35">
+    <img class="page-header__logo-image1" src="https://via.placeholder.com/86x35" alt="Магазин ми-ми-Мишка" width="86" height="35">
   </a>
   <nav  class="header-nav">
     <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="header-nav__wrapper">
       <ul class="header-nav__list main-list">
-        <li class="main-list__item"><a  href="blank.html">Каталог товаров</a></li>
+        <li class="main-list__item"><a  href="catalog.html">Каталог товаров</a></li>
         <li class="main-list__item"><a  href="blank.html">Вязание на заказ</a></li>
         <li class="main-list__item"><a  href="blank.html">Новые поступления</a></li>
         <li class="main-list__item"><a  href="blank.html">Распродажа</a></li>
@@ -41,27 +41,30 @@
         <a  class="product-card__header-link"  href="blank.html"><h2 class="product-card__header">Зайчик попрыгайчик</h2></a>
         <p  class="product-card__desc">Рост 30 см, вес 200 г</p>
         <p  class="product-card__price">1200 руб.</p>
-        <a  class="product-card__order-link" href="blank.html"><img  class="product-card__order-image" src="https://via.placeholder.com/20x19" alt="Кнопка заказа товара" width="20" height="19"></a>
+        <a  class="product-card__order-link" href="blank.html"><svg class="product-card__order-image" width="20" height="19"><use xlink:href="https://via.placeholder.com/20x19"></use></svg></a>
       </li>
       <li class="catalog-list__item product-card">
         <a  class="product-card__image-link"  href="blank.html"><img  class="product-card__image" src="https://via.placeholder.com/260x195" alt="Товар Корзинка для белья" width="260" height="195"></a>
         <a  class="product-card__header-link"  href="blank.html"><h2 class="product-card__header">Корзинка для белья</h2></a>
         <p  class="product-card__desc">Диаметр 15 см, высота 10 см</p>
         <p  class="product-card__price">690 руб.</p>
-        <a  class="product-card__order-link" href="blank.html"><img  class="product-card__order-image" src="https://via.placeholder.com/20x19" alt="Кнопка заказа товара" width="20" height="19"></a>
+        <a  class="product-card__order-link" href="blank.html"><svg class="product-card__order-image" width="20" height="19"><use xlink:href="https://via.placeholder.com/20x19"></use></svg></a>
       </li>
       <li class="catalog-list__item product-card">
         <a  class="product-card__image-link"  href="blank.html"><img  class="product-card__image" src="https://via.placeholder.com/260x195" alt="Товар Большая корзинка для игрушек" width="260" height="195"></a>
         <a  class="product-card__header-link"  href="blank.html"><h2 class="product-card__header">Большая корзинка для игрушек</h2></a>
         <p  class="product-card__desc">Диаметр 30 см, высота 30 см</p>
         <p  class="product-card__price">1500 руб.</p>
-        <a  class="product-card__order-link" href="blank.html"><img  class="product-card__order-image" src="https://via.placeholder.com/20x19" alt="Кнопка заказа товара" width="20" height="19"></a>
+        <a  class="product-card__order-link" href="blank.html"><svg class="product-card__order-image" width="20" height="19"><use xlink:href="https://via.placeholder.com/20x19"></use></svg></a>
       </li>
     </ul>
   </section>
   <section  class="information-article">
     <h2 class="information-article__header">Процесс производства</h2>
-    <img src="https://via.placeholder.com/260x150" alt="Заглушка для видео окна"  width="260" height="150">
+    <div class="information-article__video-content  video-player">
+      <img  class="video-player__preview-image" src="https://via.placeholder.com/260x150" alt="Заглушка для видео окна"  width="260" height="150">
+      <button class="video-player__control" type="button"><span class="visually-hidden">Запустить видео</span></button>
+    </div>
     <p  class="information-article__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
     <a class="regular-button information-article__order-button" href="form.html" aria-label="Форма для заказа">Сделать заказ</a>
   </section>

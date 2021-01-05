@@ -1,0 +1,24 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  position: relative;
+  height: 576px;
+
+  @include block-underline;
+}
+
+.reviews__text {
+  font-size: 15px;
+  color: $primary-color;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.reviews__author-nick {
+  font-weight: normal;
+  color: $primary-color;
+}

@@ -1,0 +1,20 @@
+.form-size {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-size__fieldset {
+  border: none;
+}
+
+.form-size__title {
+  color: $primary-color;
+  font-size: 15px;
+}
+
+.form-size__submit {
+  background-color: $style-color;
+  color: $basic-white;
+  outline: none;
+  border: none;
+}

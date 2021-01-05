@@ -1,1 +1,24 @@
 // Начните писать стили здесь
+@import "global/custom-colors";
+@import "global/fonts";
+@import "global/visually-hidden";
+@import "global/variables";
+@import "global/tags";
+@import "blocks/page-body";
+@import "blocks/page-header";
+@import "blocks/header-nav";
+@import "blocks/main-list";
+@import "blocks/page-main";
+@import "blocks/features";
+@import "blocks/common-header";
+@import "blocks/product-main";
+@import "blocks/regular-button";
+@import "blocks/desc-main";
+@import "blocks/reviews";
+@import "blocks/slider";
+@import "blocks/contacts";
+@import "blocks/footer-main";
+@import "blocks/social-list";
+@import "blocks/footer-main-copiright";
+@import "blocks/modal-cart";
+@import "blocks/form-size";
