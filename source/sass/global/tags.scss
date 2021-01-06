@@ -6,3 +6,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: $basic-white;
+}
