@@ -1,21 +1,19 @@
 .features-list {
+  width: 320px;
   @include list-drop-style;
   color: $basic-white;
   font-weight: bold;
-  margin-left: -30px;
-  margin-right: -30px;
 }
 
 .features-list__item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 30px;
-  padding-left: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
   font-size: 19px;
   line-height: 24px;
   height: 103px;
-  background-color: $style-color;
+  position: relative;
 
   a {
     color: $basic-white;
@@ -25,14 +23,17 @@
       content: "";
       position: absolute;
       background-repeat: no-repeat;
+      right: 30px;
     }
   }
 
   &--interior {
+    background-color: $style-color;
+
     a::after {
-      content: "";
       width: 40px;
       height: 62px;
+      top: 23px;
       background-image: url("../img/interior.svg");
     }
   }
@@ -41,9 +42,9 @@
     background-color: $style-color-additional;
 
     a::after {
-      content: "";
       width: 60px;
       height: 60px;
+      top: 21px;
       background-image: url("../img/toy.svg");
     }
   }
