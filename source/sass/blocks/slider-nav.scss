@@ -7,8 +7,7 @@
 .slider-nav__button-next {
   width: 130px;
   height: 52px;
-  border: none;
-  outline: 1px solid $outline-light-color;
+  border: 1px solid $outline-light-color;
   cursor: pointer;
 
   &:focus {
