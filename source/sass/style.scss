@@ -1,8 +1,8 @@
 // Начните писать стили здесь
-@import "global/custom-colors";
-@import "global/fonts";
-@import "global/visually-hidden";
 @import "global/variables";
+@import "global/fonts";
+@import "global/mixins";
+@import "global/visually-hidden";
 @import "global/tags";
 @import "blocks/page-body";
 @import "blocks/page-header";
