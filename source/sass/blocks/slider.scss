@@ -11,28 +11,3 @@
   display: block;
 }
 
-.slider-nav {
-  display: flex;
-  width: 260px;
-}
-
-.slider-nav__button-prev,
-.slider-nav__button-next {
-  width: 130px;
-  height: 52px;
-  border: none;
-  outline: 1px solid $outline-light-color;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.slider-nav__button-prev {
-  background: transparent url("../img/huge-arrow-left.svg") no-repeat left 50% top 50%;
-}
-
-.slider-nav__button-next {
-  background: transparent url("../img/huge-arrow-right.svg") no-repeat left 50% top 50%;
-}
