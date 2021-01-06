@@ -9,6 +9,10 @@
   @include block-underline;
 }
 
+.product-main__header {
+  color: $basic-black;
+}
+
 .product-main__label {
   font-weight: bold;
   color: $style-color;
@@ -25,6 +29,11 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+}
+
+.product-main__table {
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .product-main__table-title {
