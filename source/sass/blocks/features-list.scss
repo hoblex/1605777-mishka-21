@@ -1,5 +1,6 @@
 .features-list {
   width: 320px;
+
   @include list-drop-style;
   color: $basic-white;
   font-weight: bold;
