@@ -19,4 +19,14 @@
   color: $basic-white;
   outline: none;
   border: none;
+
+  &:hover {
+    background-color: $style-color;
+    color: $basic-white;
+  }
+
+  &:active {
+    background-color: $style-color;
+    color: $basic-white;
+  }
 }
