@@ -1,9 +1,18 @@
 .main-list {
   display: flex;
   flex-direction: column;
+  line-height: 24px;
 }
 
 .main-list__item a {
   color: $basic-black;
   font-weight: bold;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
