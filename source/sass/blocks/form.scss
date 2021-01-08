@@ -250,6 +250,12 @@
   }
 }
 
+.form__control--email-icon:hover path {
+  fill: $style-color;
+  opacity: 1;
+}
+
+
 .form__label--email {
   //&::after {
   //  content: "";
