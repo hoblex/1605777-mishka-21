@@ -8,6 +8,16 @@
   align-items: center;
 }
 
+.footer-main__logo-image {
+  &:hover path {
+    fill: $style-color;
+  }
+
+  &:active path {
+    fill: $style-color-30;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .footer-main__logo {
     display: none;
