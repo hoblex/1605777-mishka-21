@@ -5,7 +5,6 @@
 }
 
 .page-catalog__header {
-  font-size: 27px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -13,4 +12,5 @@
   height: 177px;
   background-color: $image-background-color;
   margin: 0 -30px;
+  font-size: 27px;
 }
