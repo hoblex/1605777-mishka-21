@@ -26,3 +26,17 @@
 .header-nav__delivery-info {
   color: $primary-color;
 }
+
+@media (max-width: $mobile-width-only) {
+  .header-nav__delivery-info,
+  .header-nav__form-input {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header-nav__delivery-info,
+  .header-nav__form-input {
+    display: block;
+  }
+}
