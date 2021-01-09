@@ -1,7 +1,6 @@
 .header-nav {
   margin: 0;
   width: 260px;
-  line-height: 24px;
 }
 
 .header-nav__form {
@@ -21,10 +20,51 @@
 .header-nav__cart-link {
   font-weight: bold;
   color: $basic-black;
+  line-height: 24px;
+
+  & path {
+    fill: $basic-black-20;
+  }
+
+  &:hover {
+    color: $basic-black-60;
+
+    & path {
+      fill: $style-color;
+    }
+  }
+
+  &:active {
+    color: $basic-black-30;
+
+    & path {
+      fill: $style-color-30;
+    }
+  }
 }
 
 .header-nav__delivery-info {
   color: $primary-color;
+}
+
+.header-nav__form-label {
+  cursor: pointer;
+}
+
+.header-nav__form-icon {
+  &:hover path {
+    fill: $style-color;
+    opacity: 1;
+  }
+
+  &:active path {
+    fill: $style-color;
+    opacity: 0.3;
+  }
+}
+
+.header-nav__form-name {
+  line-height: 24px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -37,6 +77,32 @@
 @media (min-width: $tablet-width) {
   .header-nav__delivery-info,
   .header-nav__form-input {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header-nav__toggle {
     display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header-nav__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header-nav__form-name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header-nav__form-name {
+    display: none;
   }
 }

@@ -3,44 +3,12 @@
   padding: 0;
 }
 
-//@media (max-width: $mobile-width-only) {
-//  .page-header__logo-image {
-//    display: block;
-//  }
-//
-//  .page-header__logo-image-tablet {
-//    display: none;
-//  }
-//
-//  .page-header__logo-image-desktop {
-//    display: none;
-//  }
-//}
-//
-//@media (min-width: $tablet-width) {
-//  .page-header__logo-image {
-//    display: none;
-//  }
-//
-//  .page-header__logo-image-tablet {
-//    display: block;
-//  }
-//
-//  .page-header__logo-image-desktop {
-//    display: none;
-//  }
-//}
-//
-//@media (min-width: $desktop-width) {
-//  .page-header__logo-image {
-//    display: none;
-//  }
-//
-//  .page-header__logo-image-tablet {
-//    display: none;
-//  }
-//
-//  .page-header__logo-image-desktop {
-//    display: block;
-//  }
-//}
+.page-header__logo-image {
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}

@@ -1,0 +1,19 @@
+.video-player__control {
+  width: 101px;
+  height: 77px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+}
