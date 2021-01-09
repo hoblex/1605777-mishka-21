@@ -7,18 +7,17 @@
 }
 
 .features-list__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px;
-  font-size: 19px;
-  line-height: 24px;
-  height: 103px;
-  position: relative;
-
   a {
     color: $basic-white;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 19px;
+    line-height: 24px;
+    height: 103px;
+    position: relative;
 
     &::after {
       content: "";
@@ -26,6 +25,10 @@
       background-repeat: no-repeat;
       right: 30px;
     }
+  }
+
+  &:hover {
+    height: 108px;
   }
 
   &--interior {
