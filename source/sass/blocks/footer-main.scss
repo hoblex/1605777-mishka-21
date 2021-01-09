@@ -10,21 +10,21 @@
 
 .footer-main__logo-image {
   &:hover path {
-    fill: $style-color-footer;
+    fill: $style-color-additional2;
   }
 
   &:active path {
-    fill: $style-color-footer-30;
+    fill: $style-color-additional2-30;
   }
 }
 
 .footer-main-copyright__link {
   &:hover path {
-    fill: $style-color-footer;
+    fill: $style-color-additional2;
   }
 
   &:active path {
-    fill: $style-color-footer-30;
+    fill: $style-color-additional2-30;
   }
 }
 
