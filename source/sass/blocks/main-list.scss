@@ -1,0 +1,9 @@
+.main-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-list__item a {
+  color: $basic-black;
+  font-weight: bold;
+}

@@ -1,0 +1,17 @@
+@mixin list-drop-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin block-underline {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+    width: 320px;
+    background-image: url("../../img/zigzag-line-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}

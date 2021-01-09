@@ -1,0 +1,52 @@
+.features-list {
+  width: 320px;
+
+  @include list-drop-style;
+  color: $basic-white;
+  font-weight: bold;
+}
+
+.features-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-size: 19px;
+  line-height: 24px;
+  height: 103px;
+  position: relative;
+
+  a {
+    color: $basic-white;
+    font-weight: bold;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      right: 30px;
+    }
+  }
+
+  &--interior {
+    background-color: $style-color;
+
+    a::after {
+      width: 40px;
+      height: 62px;
+      top: 23px;
+      background-image: url("../img/interior.svg");
+    }
+  }
+
+  &--toy {
+    background-color: $style-color-additional;
+
+    a::after {
+      width: 60px;
+      height: 60px;
+      top: 21px;
+      background-image: url("../img/toy.svg");
+    }
+  }
+}
