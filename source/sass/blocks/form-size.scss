@@ -6,13 +6,125 @@
 .form-size__fieldset {
   border: none;
   padding: 0;
-  margin: 0;
+  width: 260px;
+  margin: 0 0 31px 0;
 }
 
 .form-size__title {
   color: $primary-color;
   font-size: 15px;
+  width: 162px;
+  padding: 0;
+  margin: 0 auto 21px auto;
 }
+
+.form-size__label {
+  font-size: 17px;
+  line-height: 16px;
+  color: $primary-color;
+  width: 82px;
+  height: 52px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-size__checkbox {
+  appearance: none;
+  width: 82px;
+  height: 52px;
+  border: 2px solid $primary-color-10;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0;
+  outline: none;
+
+  &:hover {
+    border-color: $primary-color-30;
+  }
+
+  &:active {
+    border-color: $style-color;
+  }
+
+  &:checked {
+    border-color: $modal-form-checked-color;
+  }
+
+  &--s {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "S";
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 16px;
+      left: 34px;
+      top: 18px;
+    }
+  }
+
+  &--m {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "M";
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 16px;
+      left: 34px;
+      top: 18px;
+    }
+  }
+
+  &--l {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "L";
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 16px;
+      left: 34px;
+      top: 18px;
+    }
+  }
+}
+
+//.form-size__checkbox {
+//  position: relative;
+//  padding: 0;
+//  margin: 0;
+//  appearance: none;
+//
+//  &::after {
+//    content: "";
+//    position: absolute;
+//    width: 82px;
+//    height: 52px;
+//    background-size: 82px 52px;
+//    background-image: url("../img/size-btn.svg");
+//    background-repeat: no-repeat;
+//    cursor: pointer;
+//    left: -35px;
+//    top: -31px;
+//    padding-right: 10px;
+//  }
+//
+//  &:checked::after {
+//    background-image: url("../img/size-btn-active.svg");
+//  }
+//
+//  &:hover::after {
+//    background-image: url("../img/size-btn-hover.svg");
+//  }
+//
+//  &:active::after {
+//    background-image: url("../img/size-btn-active.svg");
+//  }
+//}
 
 .form-size__submit {
   background-color: $style-color;
