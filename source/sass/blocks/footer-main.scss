@@ -8,6 +8,26 @@
   align-items: center;
 }
 
+.footer-main__logo-image {
+  &:hover path {
+    fill: $style-color-footer;
+  }
+
+  &:active path {
+    fill: $style-color-footer-30;
+  }
+}
+
+.footer-main-copyright__link {
+  &:hover path {
+    fill: $style-color-footer;
+  }
+
+  &:active path {
+    fill: $style-color-footer-30;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .footer-main__logo {
     display: none;
