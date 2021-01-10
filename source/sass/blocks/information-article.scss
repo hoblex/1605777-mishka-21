@@ -1,11 +1,12 @@
 .information-article {
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
   border: 1px solid $outline-light-color;
-  padding-left: 32px;
   height: 503px;
   margin-bottom: 58px;
+  width: 260px;
 }
 
 .information-article__header-wrap {
@@ -34,7 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -32px;
   margin-bottom: 35px;
   background-color: $style-color-60;
   width: 260px;
@@ -44,10 +44,13 @@
 }
 
 .information-article__desc {
+  display: inline-block;
+  vertical-align: middle;
   color: $primary-color;
   font-size: 13px;
   line-height: 24px;
-  margin: 0 0 41px 0;
+  margin: 0 0 41px 34px;
+  width: 224px;
 }
 
 .information-article__order-button {

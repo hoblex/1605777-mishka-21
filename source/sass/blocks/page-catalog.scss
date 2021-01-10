@@ -1,7 +1,7 @@
 .page-catalog {
   display: flex;
   flex-direction: column;
-  width: 260px;
+  min-width: 320px;
 }
 
 .page-catalog__header {
@@ -11,6 +11,6 @@
   justify-content: center;
   height: 177px;
   background-color: $image-background-color;
-  margin: 30px -30px;
+  width: 320px;
   font-size: 27px;
 }
