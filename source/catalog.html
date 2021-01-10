@@ -124,6 +124,11 @@
         <h2 class="information-article__header">Процесс производства</h2>
       </div>
       <div class="information-article__video-content  video-player">
+        <picture  class="video-player__preview-image" >
+          <source media="(min-width: 1150px)" srcset="img/video-preview-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/video-preview-tablet.png">
+          <img  src="img/video-preview-mobile.png" alt="Заглушка для превью видео" width="260" height="150">
+        </picture>
         <button class="video-player__control" type="button"><span class="visually-hidden">Запустить видео</span></button>
       </div>
       <p  class="information-article__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
