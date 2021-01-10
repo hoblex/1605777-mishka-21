@@ -17,16 +17,6 @@
   }
 }
 
-.footer-main-copyright__link {
-  &:hover path {
-    fill: $style-color-additional2;
-  }
-
-  &:active path {
-    fill: $style-color-additional2-30;
-  }
-}
-
 @media (max-width: $mobile-width-only) {
   .footer-main__logo {
     display: none;

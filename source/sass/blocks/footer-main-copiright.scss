@@ -12,6 +12,14 @@
   color: $basic-black;
   justify-content: space-between;
   padding: 0;
+
+  &:hover > path {
+    fill: $style-color-additional2;
+  }
+
+  &:active path {
+    fill: $style-color-additional2-30;
+  }
 }
 
 .footer-main-copyright__title {
