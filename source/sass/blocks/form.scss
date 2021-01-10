@@ -22,9 +22,22 @@
 }
 
 .form__legend-name {
-  display: inline-block;
-  vertical-align: middle;
-  width: 60px;
+  position: relative;
+  display: block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    right: 0;
+    top: 8px;
+    border-top: 1px solid $style-color;
+  }
+  
+  &--email::after {
+    width: 186px;
+  }
 }
 
 .form__legend-line {
