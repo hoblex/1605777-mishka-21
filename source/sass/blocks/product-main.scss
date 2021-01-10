@@ -4,7 +4,7 @@
   flex-direction: column;
   color: $primary-color;
   height: 795px;
-  width: 260px;
+  min-width: 260px;
 
   @include block-underline;
 }
@@ -21,8 +21,10 @@
 }
 
 .product-main__desc {
+  margin: 0;
   font-size: 15px;
   line-height: 24px;
+  width: 260px;
 }
 
 .product-main__price {
@@ -57,9 +59,3 @@
   display: flex;
   align-items: center;
 }
-
-//.product-main__table-title {
-//  float: left;
-//  clear: left;
-//  width: 97px;
-//}

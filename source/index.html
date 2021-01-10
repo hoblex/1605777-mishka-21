@@ -16,7 +16,7 @@
       <img src="img/mishka-logo-mobile.svg" alt="Магазин ми-ми-Мишка">
     </picture>
   </a>
-  <nav  class="header-nav  header-nav--closed">
+  <nav  class="container header-nav  header-nav--closed">
     <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="header-nav__wrapper">
       <ul class="header-nav__list main-list">
@@ -53,10 +53,10 @@
       <li class="features-list__item  features-list__item--toy"><a  href="blank.html">Детские<br>игрушки</a></li>
     </ul>
   </section>
-  <section  class="product-main">
+  <section  class="container product-main">
     <h2  class="product-main__header common-header">Вязаные корзинки</h2>
     <p class="product-main__label">Товар недели</p>
-    <p  class="product-main__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+    <p  class="product-main__desc">Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках, и трех размерах.</p>
     <dl class="product-main__table">
       <dt class="product-main__table-title">Цвет:</dt>
       <dd class="product-main__table-desc">"Тиффани"/серый</dd>
@@ -69,7 +69,7 @@
     <span class="product-main__price">Цена: 990 руб.</span>
     <a class="regular-button product-main__order-link">Заказать</a>
   </section>
-  <article  class="desc-main">
+  <article  class="container desc-main">
     <h2 class="desc-main__header common-header">Коротко о нас:</h2>
     <ul class="desc-main__list">
       <li class="desc-main__list-item desc-main__list-item--ecology">Экологически чистые материалы</li>
@@ -80,7 +80,7 @@
       <li class="desc-main__list-item desc-main__list-item--packaging">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
     </ul>
   </article>
-  <section  class="reviews">
+  <section  class="container reviews">
     <h2 class="reviews__header common-header">Отзывы</h2>
     <div class="reviews__slider slider">
       <div class="reviews__item slider__item">
@@ -111,17 +111,21 @@
     <a class="regular-button reviews__feedback-button">Написать</a>
   </section>
   <section class="contacts">
-    <h2 class="contacts__header">Контакты</h2>
-    <div class="contacts__email">
-      <span class="contacts__email-header">e-mail:</span>
-      <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-    </div>
-    <div class="contacts__address">
-      <span class="contacts__address-header">адрес:</span>
-      <span class="contacts__address-content">г.&nbsp;Санкт-Петербург<br>ул.&nbsp;Большая Конюшенная<br>д.&nbsp;19/8, офис&nbsp;101</span>
+    <div  class="container">
+      <h2 class="contacts__header">Контакты</h2>
+      <div class="contacts__email">
+        <span class="contacts__email-header">e-mail:</span>
+        <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+      </div>
+      <div class="contacts__address">
+        <span class="contacts__address-header">адрес:</span>
+        <span class="contacts__address-content">г.&nbsp;Санкт-Петербург<br>ул.&nbsp;Большая Конюшенная<br>д.&nbsp;19/8, офис&nbsp;101</span>
+      </div>
     </div>
     <a  class="contacts__map-link"  href="blank.html"><img  class="contacts__map-img" src="img/map-mobile.jpg" alt="Карта. Как нас найти" width="320" height="454"></a>
-    <a class="contacts__button regular-button" href="blank.html">Напишите нам</a>
+    <div class="container">
+      <a class="contacts__button regular-button" href="blank.html">Напишите нам</a>
+    </div>
   </section>
 </main>
 <footer class="footer-main">
@@ -156,7 +160,7 @@
     </a>
   </div>
 </footer>
-<section  class="modal-cart">
+<section  class="container modal-cart">
   <h3 class="modal-cart__header">Добавить в&nbsp;корзину</h3>
   <form class="modal-cart__form form-size"  action="https://echo.htmlacademy.ru"  method="get"  >
     <fieldset class="form-size__fieldset">
