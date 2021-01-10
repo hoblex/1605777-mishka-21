@@ -3,9 +3,28 @@
   height: 160px;
   flex-direction: column;
   width: 320px;
-  margin-left: -30px;
   background-color: $image-background-color;
   align-items: center;
+}
+
+.footer-main__logo-image {
+  &:hover path {
+    fill: $style-color-additional2;
+  }
+
+  &:active path {
+    fill: $style-color-additional2-30;
+  }
+}
+
+.footer-main-copyright__link {
+  &:hover path {
+    fill: $style-color-additional2;
+  }
+
+  &:active path {
+    fill: $style-color-additional2-30;
+  }
 }
 
 @media (max-width: $mobile-width-only) {

@@ -7,6 +7,7 @@
 
 .contacts__header {
   font-size: 18px;
+  margin: 0;
 }
 
 .contacts__email,
@@ -24,15 +25,22 @@
 
 .contacts__email-link {
   color: $primary-color;
+  border-bottom: 1px solid $style-color;
+  box-sizing: border-box;
+  height: 30px;
+
+  &:hover {
+    color: $style-color-additional2;
+    border-bottom: 1px solid $style-color-additional2;
+  }
+
+  &:active {
+    border-bottom: 1px solid $style-color-additional2-10;
+  }
 }
 
 .contacts__map-link {
   width: 320px;
-}
-
-.contacts__map-img {
-  margin-left: -30px;
-  margin-right: -30px;
 }
 
 .contacts__button {

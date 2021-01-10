@@ -1,6 +1,7 @@
 .slider-nav {
   display: flex;
   width: 260px;
+  margin-bottom: 38px;
 }
 
 .slider-nav__button-prev,
@@ -12,6 +13,14 @@
 
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

@@ -4,7 +4,7 @@
   flex-direction: column;
   color: $primary-color;
   height: 795px;
-  width: 260px;
+  min-width: 260px;
 
   @include block-underline;
 }
@@ -21,8 +21,10 @@
 }
 
 .product-main__desc {
+  margin: 0;
   font-size: 15px;
   line-height: 24px;
+  width: 260px;
 }
 
 .product-main__price {
@@ -34,10 +36,26 @@
 .product-main__table {
   font-size: 15px;
   line-height: 20px;
+  display: grid;
+  margin: 0 0 28px 0;
+  grid-template-rows: 40px 40px 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0;
+  width: 260px;
 }
 
 .product-main__table-title {
-  float: left;
-  clear: left;
-  width: 97px;
+  min-width: 97px;
+  border-bottom: 1px solid $outline-light-color;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.product-main__table-desc {
+  margin: 0;
+  min-width: 163px;
+  border-bottom: 1px solid $outline-light-color;
+  display: flex;
+  align-items: center;
 }
