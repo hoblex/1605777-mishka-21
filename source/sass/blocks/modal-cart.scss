@@ -1,8 +1,7 @@
 .modal-cart {
-  display: flex;
-  flex-direction: column;
   height: 336px;
-  width: 320px;
+  min-width: 320px;
+  max-width: 556px;
   align-items: center;
   box-sizing: border-box;
   border: 1px solid $modal-border-color;

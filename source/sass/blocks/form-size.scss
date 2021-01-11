@@ -1,16 +1,18 @@
 .form-size {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  min-width: 260px;
 }
 
 .form-size__fieldset {
   border: none;
   padding: 0;
-  width: 260px;
+  min-width: 260px;
   height: 103px;
   margin: 0 0 31px 0;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 7px;
 }
 
@@ -65,44 +67,12 @@
   transform: translate(-50%, 50%);
 }
 
-//.form-size__checkbox {
-//  position: relative;
-//  padding: 0;
-//  margin: 0;
-//  appearance: none;
-//
-//  &::after {
-//    content: "";
-//    position: absolute;
-//    width: 82px;
-//    height: 52px;
-//    background-size: 82px 52px;
-//    background-image: url("../img/size-btn.svg");
-//    background-repeat: no-repeat;
-//    cursor: pointer;
-//    left: -35px;
-//    top: -31px;
-//    padding-right: 10px;
-//  }
-//
-//  &:checked::after {
-//    background-image: url("../img/size-btn-active.svg");
-//  }
-//
-//  &:hover::after {
-//    background-image: url("../img/size-btn-hover.svg");
-//  }
-//
-//  &:active::after {
-//    background-image: url("../img/size-btn-active.svg");
-//  }
-//}
-
 .form-size__submit {
   background-color: $style-color;
   color: $basic-white;
   outline: none;
   border: none;
+  margin: 0 auto;
 
   &:hover {
     background-color: $style-color;
