@@ -52,6 +52,10 @@
 }
 
 .header-nav__form-icon {
+  path {
+    fill: $basic-black-20;
+  }
+
   &:hover path {
     fill: $style-color;
   }
