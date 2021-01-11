@@ -54,12 +54,10 @@
 .header-nav__form-icon {
   &:hover path {
     fill: $style-color;
-    opacity: 1;
   }
 
   &:active path {
-    fill: $style-color;
-    opacity: 0.3;
+    fill: $style-color-30;
   }
 }
 
