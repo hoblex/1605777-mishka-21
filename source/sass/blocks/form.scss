@@ -148,9 +148,7 @@
   }
 }
 
-.form__control--text,
-.form__control--tel,
-.form__control--email {
+.form__control--text {
   position: relative;
   border: none;
   outline: none;
@@ -173,97 +171,31 @@
   }
 }
 
-.form__control--tel-icon {
+.form__control--connect-icon {
   width: 25px;
   height: 24px;
   position: absolute;
   right: 7px;
   top: 0;
-}
 
-.form__control--tel-icon path {
-  opacity: 0.2;
-}
+  & path {
+    opacity: 0.2;
+  }
 
-.form__control--tel {
-  &:focus-within + .form__control--tel-icon path,
-  &:focus + .form__control--tel-icon path,
-  &:active + .form__control--tel-icon path,
-  &:hover + .form__control--tel-icon path {
+  &:hover path {
     fill: $style-color;
     opacity: 1;
   }
 }
 
-.form__control--tel-icon:hover path {
-  fill: $style-color;
-  opacity: 1;
-}
-
-.form__label--tel {
-  //&::after {
-  //  content: "";
-  //  position: absolute;
-  //  width: 25px;
-  //  height: 24px;
-  //  right: 7px;
-  //  top: 0;
-  //  background-image: url("../img/icon-phone.svg");
-  //  background-repeat: no-repeat;
-  //}
-  //
-  //&:hover::after,
-  //&:active::after,
-  //&:focus::after {
-  //  background-image: url("../img/icon-phone-hover.svg");
-  //}
-}
-
-.form__control--email-icon {
-  width: 32px;
-  height: 21px;
-  position: absolute;
-  right: 3px;
-  top: 0;
-}
-
-.form__control--email-icon path {
-  opacity: 0.2;
-}
-
-.form__control--email {
-  &:focus-within + .form__control--email-icon path,
-  &:focus + .form__control--email-icon path,
-  &:active + .form__control--email-icon path,
-  &:hover + .form__control--email-icon path {
+.form__control--connect {
+  &:focus-within + .form__control--connect-icon path,
+  &:focus + .form__control--connect-icon path,
+  &:active + .form__control--connect-icon path,
+  &:hover + .form__control--connect-icon path {
     fill: $style-color;
     opacity: 1;
   }
-}
-
-.form__control--email-icon:hover path {
-  fill: $style-color;
-  opacity: 1;
-}
-
-
-.form__label--email {
-  //&::after {
-  //  content: "";
-  //  position: absolute;
-  //  width: 32px;
-  //  height: 21px;
-  //  right: 3px;
-  //  top: 0;
-  //  background-image: url("../img/icon-email.svg");
-  //  background-repeat: no-repeat;
-  //}
-  //
-  //&:hover::after,
-  //&:active::after,
-  //&:focus::after {
-  //  background-image: url("../img/icon-email-hover.svg");
-  //}
 }
 
 .form__control--textarea {
