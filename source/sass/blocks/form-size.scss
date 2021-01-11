@@ -7,15 +7,20 @@
   border: none;
   padding: 0;
   width: 260px;
+  height: 103px;
   margin: 0 0 31px 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 7px;
 }
 
 .form-size__title {
   color: $primary-color;
   font-size: 15px;
-  width: 162px;
+  width: auto;
   padding: 0;
-  margin: 0 auto 21px auto;
+  margin: 0 auto;
+  grid-area: 1 / 1 / 2 / 4;
 }
 
 .form-size__label {
@@ -24,8 +29,7 @@
   color: $primary-color;
   width: 82px;
   height: 52px;
-  display: inline-block;
-  vertical-align: middle;
+  position: relative;
 }
 
 .form-size__checkbox {
@@ -49,48 +53,16 @@
   &:checked {
     border-color: $modal-form-checked-color;
   }
+}
 
-  &--s {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "S";
-      font-weight: bold;
-      font-size: 17px;
-      line-height: 16px;
-      left: 34px;
-      top: 18px;
-    }
-  }
-
-  &--m {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "M";
-      font-weight: bold;
-      font-size: 17px;
-      line-height: 16px;
-      left: 34px;
-      top: 18px;
-    }
-  }
-
-  &--l {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "L";
-      font-weight: bold;
-      font-size: 17px;
-      line-height: 16px;
-      left: 34px;
-      top: 18px;
-    }
-  }
+.form-size__checkbox-name {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  transform: translate(-50%, 50%);
 }
 
 //.form-size__checkbox {
