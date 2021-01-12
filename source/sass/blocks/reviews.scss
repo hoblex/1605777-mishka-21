@@ -1,21 +1,30 @@
 .reviews {
   display: flex;
   flex-direction: column;
-  width: 260px;
+  min-width: 260px;
   position: relative;
   height: 679px;
 
   @include block-underline;
 }
 
+.reviews__header {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .reviews__text {
   font-size: 15px;
   color: $primary-color;
+  margin-bottom: 33px;
 }
 
 .reviews__author-name {
+  display: block;
   font-style: normal;
   font-weight: bold;
+  max-width: 260px;
+  margin-bottom: 30px;
 }
 
 .reviews__author-nick {
@@ -25,4 +34,12 @@
 
 .reviews__feedback-button {
   color: $primary-color;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__feedback-button {
+    min-width: 175px;
+    max-width: 175px;
+  }
 }
