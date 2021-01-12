@@ -1,8 +1,19 @@
 .desc-main {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  height: 758px;
+  min-width: 260px;
+  height: 800px;
+}
+
+.desc-main__header {
+  margin-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .desc-main__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .desc-main__list {
@@ -10,15 +21,29 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 671px;
+  max-height: 414px;
+}
+
+@media (min-width: $tablet-width) {
+  .desc-main__list {
+    min-height: 680px;
+    flex-wrap: wrap;
+  }
 }
 
 .desc-main__list-item {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  max-width: 260px;
+  height: 96px;
+  margin-bottom: 60px;
+
+  &::before {
+    top: -30px;
+  }
 
   &--ecology {
     height: 94px;
@@ -29,7 +54,7 @@
       position: absolute;
       width: 33px;
       height: 38px;
-      top: 0;
+      //top: -10px;
       left: 8px;
       background-image: url("../img/icon-ecology.svg");
       background-repeat: no-repeat;
@@ -45,7 +70,7 @@
       position: absolute;
       width: 47px;
       height: 27px;
-      top: 0;
+      //top: -10px;
       left: 0;
       background-image: url("../img/icon-scandinavian.svg");
       background-repeat: no-repeat;
@@ -61,7 +86,7 @@
       position: absolute;
       width: 34px;
       height: 27px;
-      top: 0;
+      //top: 0;
       left: 7px;
       background-image: url("../img/icon-likes.svg");
       background-repeat: no-repeat;
@@ -77,7 +102,7 @@
       position: absolute;
       width: 35px;
       height: 34px;
-      top: 0;
+      //top: 0;
       left: 3px;
       background-image: url("../img/icon-knitting.svg");
       background-repeat: no-repeat;
@@ -93,7 +118,7 @@
       position: absolute;
       width: 55px;
       height: 23px;
-      top: 0;
+      //top: 0;
       left: -6px;
       background-image: url("../img/icon-domestic.svg");
       background-repeat: no-repeat;
@@ -109,7 +134,7 @@
       position: absolute;
       width: 33px;
       height: 32px;
-      top: 0;
+      //top: 0;
       left: 3px;
       background-image: url("../img/icon-packaging.svg");
       background-repeat: no-repeat;

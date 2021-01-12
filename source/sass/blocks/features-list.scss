@@ -1,5 +1,6 @@
 .features-list {
-  width: 320px;
+  display: block;
+  min-width: 320px;
 
   @include list-drop-style;
   color: $basic-white;
@@ -7,12 +8,14 @@
 }
 
 .features-list__item {
+  display: block;
+
   a {
+    min-width: 260px;
     color: $basic-white;
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 30px;
     font-size: 19px;
     line-height: 24px;
@@ -38,6 +41,7 @@
       width: 40px;
       height: 62px;
       top: 23px;
+      right: 35px;
       background-image: url("../img/interior.svg");
     }
   }
@@ -49,6 +53,7 @@
       width: 60px;
       height: 60px;
       top: 21px;
+      right: 28px;
       background-image: url("../img/toy.svg");
     }
   }
