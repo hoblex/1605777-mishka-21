@@ -2,9 +2,22 @@
   display: flex;
   flex-direction: column;
   line-height: 24px;
+  min-width: 320px;
+}
+
+.main-list__item {
+  min-width: 214px;
+  height: 79px;
+  border-top: 1px solid $outline-light-color;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 76px;
 }
 
 .main-list__item a {
+  max-width: 214px;
+  display: block;
   color: $basic-black;
   font-weight: bold;
 
@@ -14,5 +27,12 @@
 
   &:active {
     opacity: 30%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-list__item:nth-child(3),
+  .main-list__item:nth-child(4) {
+    display: none;
   }
 }

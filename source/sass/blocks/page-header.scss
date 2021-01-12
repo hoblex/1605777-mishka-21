@@ -1,14 +1,44 @@
 .page-header {
   margin: 0;
   padding: 0;
+  display: flex;
+  min-width: 320px;
+  flex-direction: column;
+}
+
+.page-header__logo-link {
+  height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-header__logo-image {
+  display: block;
+  width: 86px;
+  height: 35px;
+
   &:hover {
     opacity: 60%;
   }
 
   &:active {
     opacity: 30%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-link,
+  .page-header__logo-image {
+    width: 114px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-link,
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 }
