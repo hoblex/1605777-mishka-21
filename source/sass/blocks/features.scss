@@ -6,6 +6,18 @@
   background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 0 37%;
+    background-size: 100%;
+    background-image: url("../img/hero-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 0 40%;
+    background-size: 100%;
+    background-image: url("../img/hero-desktop.png");
+  }
 }
 
 .features__title {

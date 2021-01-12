@@ -17,14 +17,12 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .footer-main__logo {
+.footer-main__logo {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .footer-main__logo {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

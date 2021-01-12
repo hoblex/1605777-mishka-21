@@ -8,10 +8,8 @@
 
 .desc-main__header {
   margin-bottom: 82px;
-}
 
-@media (min-width: $tablet-width) {
-  .desc-main__header {
+  @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }

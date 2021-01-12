@@ -23,6 +23,10 @@
   top: 29px;
   background-color: $basic-white;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header-nav--opened .header-nav__toggle {
@@ -143,6 +147,15 @@
 
 .header-nav__delivery-info {
   color: $primary-color;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .header-nav__cart-wrapper {
@@ -153,6 +166,15 @@
 
 .header-nav__form-name {
   line-height: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header-nav__form-input {
@@ -160,49 +182,9 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .header-nav__delivery-info {
-    display: none;
-  }
-
   .header-nav--closed .header-nav__list,
   .header-nav--closed .header-nav__form,
   .header-nav--closed .header-nav__cart-link {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .header-nav__delivery-info {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .header-nav__toggle {
-    display: none;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .header-nav__toggle {
-    display: block;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .header-nav__toggle {
-    display: none;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .header-nav__form-name {
-    display: inline-block;
-    vertical-align: middle;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .header-nav__form-name {
     display: none;
   }
 }
