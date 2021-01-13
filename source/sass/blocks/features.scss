@@ -4,13 +4,23 @@
   background-size: 100%;
   background-position: 0 -17%;
   background-image: url("../img/hero-mobile.png");
+  background-color: $style-color-additional2-10;
   background-repeat: no-repeat;
   margin-bottom: 29px;
+  box-sizing: border-box;
+  padding-top: 68px;
 
   @media (min-width: $tablet-width) {
+    height: 746px;
     background-position: 0 37%;
     background-size: 100%;
     background-image: url("../img/hero-tablet.png");
+    background-color: $style-color-additional2-10;
+    //padding-top: 155px;
+    padding: 155px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,10 +35,14 @@
   width: 260px;
   height: 210px;
   margin: 0 auto;
-  padding-top: 70px;
   text-align: center;
-  vertical-align: middle;
   font-size: 27px;
-  line-height: 30px;
   font-weight: bold;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    width: 668px;
+  }
 }

@@ -7,11 +7,15 @@
   border: 1px solid $modal-border-color;
   box-shadow: 0 5px 10px $modal-shadow-color;
   padding-top: 28px;
-  //
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 556px;
+  }
   //position: fixed;
   //left: 50%;
   //top: 50%;
-  //transform: translate(-50%, -50%);
+  //transform: translate(0, -50%);
 }
 
 .modal-cart__header {

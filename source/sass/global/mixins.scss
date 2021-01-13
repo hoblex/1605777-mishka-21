@@ -14,5 +14,16 @@
     width: 100%;
     background-image: url("../img/zigzag-line-mobile.svg");
     background-repeat: repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 17px;
+      background-image: url("../img/zigzag-line-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      left: 50px;
+      background-image: url("../img/zigzag-line-desktop.svg");
+    }
   }
 }
