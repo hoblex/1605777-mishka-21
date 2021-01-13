@@ -2,6 +2,7 @@
   height: 818px;
   min-width: 260px;
   margin: 0 auto 39px auto;
+  display: block;
 }
 
 .contacts__header {
@@ -13,26 +14,25 @@
 
 .contacts__data {
   color: $primary-color;
-  display: block;
+  display: flex;
   font-size: 14px;
-  width: 260px;
+  min-width: 260px;
   margin: 0 auto 30px auto;
+
+  &--address {
+    height: 85px;
+    margin-bottom: 67px;
+  }
 }
 
 .contacts__data-header {
-  display: inline-block;
   width: 76px;
   font-size: 14px;
-  vertical-align: middle;
-
-  &--address {
-    margin-bottom: 95px;
-  }
 }
 
 .contacts__data-address-content {
   display: inline-block;
-  width: 160px;
+  max-width: 183px;
   vertical-align: middle;
 }
 
@@ -54,10 +54,11 @@
 }
 
 .contacts__map-link {
-  min-width: 320px;
-  min-height: 455px;
+  width: 320px;
+  height: 455px;
   display: block;
-  margin: 0 auto 30px auto;
+  text-align: center;
+  margin: 0 auto 42px auto;
   position: relative;
 
   &::after {
@@ -72,35 +73,45 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
-    min-height: 457px;
+    width: 768px;
+    height: 457px;
+
+    &::after {
+      left: 363px;
+      top: 139px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 527px;
-    min-height: 457px;
+    width: 527px;
+    height: 457px;
+
+    &::after {
+      left: 239px;
+      top: 145px;
+    }
   }
 }
 
 .contacts__map-img {
-  min-width: 320px;
-  min-height: 455px;
+  width: 320px;
+  height: 455px;
   display: block;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
-    min-height: 457px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 527px;
-    min-height: 457px;
+    max-width: 527px;
   }
 }
-
 
 .contacts__button {
   color: $primary-color;
   margin: 0 auto;
-  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+  }
 }

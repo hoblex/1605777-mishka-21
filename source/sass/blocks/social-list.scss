@@ -1,14 +1,30 @@
 .social-list {
-  display: flex;
-  justify-content: space-around;
-  width: 142px;
+  display: block;
   height: 80px;
+  min-width: 260px;
+  border-bottom: 1px solid $footer-border-color;
+  margin: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    margin: 0;
+  }
+}
+
+.social-list__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 142px;
+  margin: 0 auto;
+  height: 80px;
+  padding-top: 3px;
   align-items: center;
 }
 
 .social-list__link {
   width: 22px;
   height: 21px;
+
 
   &:hover path {
     fill: $style-color-additional2;
