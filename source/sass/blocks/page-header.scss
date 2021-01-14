@@ -4,10 +4,10 @@
   display: flex;
   min-width: 320px;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     height: 89px;
-    flex-direction: row;
     padding: 0 50px;
   }
 }
@@ -17,12 +17,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 0;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: middle;
     width: 86px;
     height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+    order: 20;
   }
 }
 

@@ -36,14 +36,17 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 763px;
+    padding: 158px 50px 0 50px;
     background-position: 0 40%;
     background-size: 100%;
     background-image: url("../img/hero-desktop.png");
+    margin: 0;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -17px;
       left: 0;
       height: 34px;
       width: 100%;
@@ -66,6 +69,13 @@
     font-size: 43px;
     line-height: 50px;
     width: 668px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
     height: auto;
   }
 }
