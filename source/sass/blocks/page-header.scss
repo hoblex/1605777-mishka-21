@@ -4,6 +4,12 @@
   display: flex;
   min-width: 320px;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    height: 89px;
+    flex-direction: row;
+    padding: 0 50px;
+  }
 }
 
 .page-header__logo-link {
@@ -11,6 +17,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 86px;
+    height: 46px;
+  }
 }
 
 .page-header__logo-image {
@@ -32,6 +45,9 @@
   .page-header__logo-image {
     width: 114px;
     height: 46px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate(-2px);
   }
 }
 
