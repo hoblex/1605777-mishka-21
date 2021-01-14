@@ -3,7 +3,7 @@
   height: 80px;
   min-width: 260px;
   border-bottom: 1px solid $footer-border-color;
-  margin: 0 30px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
