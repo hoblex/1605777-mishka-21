@@ -4,11 +4,12 @@
   display: flex;
   flex-direction: column;
   min-width: 320px;
+  outline: 2px solid plum;
   outline-offset: -2px;
 
   @media (min-width: $tablet-width) {
     min-width: 668px;
-    height: 881px;
+    height: 862px;
     display: block;
     margin-bottom: 0;
   }
@@ -22,6 +23,8 @@
   font-size: 18px;
   min-width: 260px;
   margin: 0 0 27px 0;
+  outline: 2px solid plum;
+  outline-offset: -2px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -30,18 +33,18 @@
     display: block;
     min-width: 668px;
     height: 81px;
-    margin-bottom: 40px;
-    margin-top: 46px;
+    margin-bottom: 20px;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      top: 0;
+      bottom: 0;
       width: 47px;
       height: 81px;
       background-image: url("../img/flag.svg");
       background-repeat: no-repeat;
+      transform: translate(0, -25%);
     }
   }
 }
@@ -52,32 +55,36 @@
   font-size: 14px;
   margin-bottom: 30px;
   min-width: 260px;
+  outline: 2px solid plum;
+  outline-offset: -2px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: middle;
-    width: 320px;
+    width: 328px;
     padding-right: 0;
-    margin: 0 0 49px 0;
+    margin-bottom: 50px;
     height: 90px;
   }
 
   &--address {
     max-height: 85px;
     margin-bottom: 67px;
+    outline: 2px solid plum;
+    outline-offset: -2px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
-      margin: 0;
+      margin-bottom: 50px;
       max-height: 90px;
     }
 
     .contacts__data-header {
       height: 85px;
-    }
 
-    @media (min-width: $tablet-width) {
-      height: 90px;
+      @media (min-width: $tablet-width) {
+        height: 90px;
+      }
     }
   }
 
@@ -92,10 +99,12 @@
   display: inline-block;
   vertical-align: middle;
   height: 30px;
+  outline: 2px solid plum;
+  outline-offset: -2px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    width: 81px;
+    width: 73px;
   }
 }
 
@@ -104,6 +113,12 @@
   max-width: 183px;
   vertical-align: middle;
   height: 85px;
+  outline: 2px solid plum;
+  outline-offset: -2px;
+
+  @media (min-width: $tablet-width) {
+    height: 90px;
+  }
 }
 
 .contacts__data-email-link {
@@ -113,6 +128,8 @@
   max-width: 183px;
   display: inline-block;
   vertical-align: middle;
+  outline: 2px solid plum;
+  outline-offset: -2px;
 
   @media (min-width: $tablet-width) {
     max-width: 230px;
@@ -150,7 +167,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 457px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 
     &::after {
       left: 363px;
@@ -189,5 +206,8 @@
 
   @media (min-width: $tablet-width) {
     max-width: 230px;
+    min-width: 230px;
+    font-size: 17px;
+    line-height: 20px;
   }
 }
