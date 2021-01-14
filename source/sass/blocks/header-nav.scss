@@ -190,6 +190,10 @@
   position: absolute;
   left: 30px;
   transform: translate(0 50%);
+
+  @media (min-width: $tablet-width) {
+    left: 20px;
+  }
 }
 
 .header-nav__cart-wrapper {
@@ -213,6 +217,7 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: auto;
+    font-size: 15px;
     order: 20;
   }
 }

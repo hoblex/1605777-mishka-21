@@ -32,14 +32,16 @@
     align-items: center;
 
     @media (min-width: $tablet-width) {
-      height: 119px;
+      height: 107px;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 0 35px;
     }
 
     &::after {
       content: "";
       position: absolute;
       background-repeat: no-repeat;
-      right: 30px;
     }
   }
 
@@ -52,6 +54,10 @@
       top: 23px;
       right: 35px;
       background-image: url("../img/interior.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
     }
 
     &:hover {
@@ -72,6 +78,10 @@
       top: 21px;
       right: 28px;
       background-image: url("../img/toy.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
     }
 
     &:hover {

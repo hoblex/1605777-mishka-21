@@ -9,6 +9,7 @@
   margin-bottom: 29px;
   box-sizing: border-box;
   padding-top: 68px;
+  border-top: 1px solid $outline-light-color;
 
   @media (min-width: $tablet-width) {
     height: 746px;
@@ -16,17 +17,17 @@
     background-size: 100%;
     background-image: url("../img/hero-tablet.png");
     background-color: $style-color-additional2-10;
-    //padding-top: 155px;
     padding: 155px 50px 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 19px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -12px;
       left: 0;
       height: 24px;
       width: 100%;
@@ -65,5 +66,6 @@
     font-size: 43px;
     line-height: 50px;
     width: 668px;
+    height: auto;
   }
 }

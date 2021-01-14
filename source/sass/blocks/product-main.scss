@@ -9,9 +9,10 @@
   @include block-underline;
 
   @media (min-width: $tablet-width) {
-    height: 573px;
+    max-height: 603px;
     min-width: 668px;
     padding: 0 50px;
+    margin-bottom: 60px;
   }
 }
 
@@ -39,12 +40,14 @@
     font-size: 43px;
     line-height: 50px;
     width: 292px;
-    margin-bottom: 37px;
+    margin-bottom: 33px;
+    height: 60px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 37px;
   }
 }
 
@@ -62,11 +65,12 @@
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-    height: 50px;
-    margin-bottom: 60px;
+    //height: 50px;
+    margin-bottom: 45px;
     order: 10;
     margin-left: auto;
     margin-right: 13px;
+    height: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,7 +91,8 @@
     width: 292px;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 0 48px 0;
+    margin: 0 0 26px 0;
+    height: 100px;
   }
 }
 
@@ -151,7 +156,7 @@
   display: grid;
   margin: 0 0 28px 0;
   grid-template-rows: 40px 40px 40px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-column-gap: 0;
   min-width: 260px;
 
@@ -168,6 +173,10 @@
   display: flex;
   align-items: center;
   height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 95px;
+  }
 }
 
 .product-main__table-desc {
@@ -180,11 +189,24 @@
 }
 
 .product-main__order-link {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  max-width: 292px;
+  height: 52px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  outline: 2px solid $primary-color;
+  outline-offset: -2px;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
+    font-size: 17px;
   }
 }

@@ -6,7 +6,7 @@
   margin-bottom: 62px;
 
   @media (min-width: $tablet-width) {
-    height: 639px;
+    height: 520px;
   }
 }
 
@@ -16,14 +16,16 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 95px;
   }
 }
 
 .desc-main__list {
-  @include list-drop-style;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include list-drop-style;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,7 +33,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    height: 352px;
+    width: 630px;
+    height: 355px;
     box-sizing: border-box;
   }
 }

@@ -1,21 +1,30 @@
 .reviews {
-  display: flex;
-  flex-direction: column;
-  min-width: 260px;
-  position: relative;
   height: 629px;
   margin-bottom: 36px;
-
-  @include block-underline;
+  position: relative;
+  min-width: 260px;
 
   @media (min-width: $tablet-width) {
     height: 542px;
     background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+
+  @include block-underline;
+
+  @media (min-width: $tablet-width) {
+    height: 383px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    margin: auto;
   }
 }
 
@@ -26,6 +35,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    height: 50px;
   }
 }
 
@@ -43,6 +53,8 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 60px;
   }
 }
 
@@ -52,11 +64,24 @@
   font-weight: bold;
   max-width: 260px;
   margin-bottom: 30px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .reviews__author-nick {
   font-weight: normal;
   color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__nav {
@@ -82,5 +107,6 @@
     max-width: 175px;
     min-width: 175px;
     margin: 0;
+    font-size: 17px;
   }
 }

@@ -1,6 +1,10 @@
 .slider {
   display: block;
   min-width: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 250px;
+  }
 }
 
 .slider__item {
