@@ -1,7 +1,12 @@
 .slider-nav {
   display: flex;
-  min-width: 260px;
+  width: 260px;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    margin-bottom: 0;
+  }
 }
 
 .slider-nav__button {
@@ -10,6 +15,11 @@
   border: 1px solid $outline-light-color;
   cursor: pointer;
   background: transparent no-repeat left 50% top 50%;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 90px;
+  }
 
   &:focus {
     outline: none;
