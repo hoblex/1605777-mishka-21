@@ -8,6 +8,7 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     margin: 0;
+    height: 85px;
   }
 }
 
@@ -19,6 +20,10 @@
   height: 80px;
   padding-top: 3px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .social-list__link {
