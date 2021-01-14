@@ -1,47 +1,122 @@
 .contacts {
   height: 818px;
-  min-width: 260px;
-  margin: 0 auto 39px auto;
-  display: block;
+  margin-bottom: 39px;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  outline-offset: -2px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 668px;
+    height: 881px;
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+.contacts__container {
+  box-sizing: border-box;
 }
 
 .contacts__header {
   font-size: 18px;
-  display: block;
-  width: 260px;
-  margin: 0 auto 27px auto;
+  min-width: 260px;
+  margin: 0 0 27px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    position: relative;
+    display: block;
+    min-width: 668px;
+    height: 81px;
+    margin-bottom: 40px;
+    margin-top: 46px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
+
 
 .contacts__data {
   color: $primary-color;
-  display: flex;
   font-size: 14px;
+  margin-bottom: 30px;
   min-width: 260px;
-  margin: 0 auto 30px auto;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 320px;
+    padding-right: 0;
+    margin: 0 0 49px 0;
+    height: 90px;
+  }
 
   &--address {
-    height: 85px;
+    max-height: 85px;
     margin-bottom: 67px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin: 0;
+      max-height: 90px;
+    }
+
+    .contacts__data-header {
+      height: 85px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 90px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
   }
 }
 
 .contacts__data-header {
   width: 76px;
   font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    width: 81px;
+  }
 }
 
 .contacts__data-address-content {
   display: inline-block;
   max-width: 183px;
   vertical-align: middle;
+  height: 85px;
 }
 
 .contacts__data-email-link {
   color: $primary-color;
   border-bottom: 1px solid $style-color;
-  box-sizing: border-box;
   height: 30px;
   max-width: 183px;
+  display: inline-block;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+  }
 
   &:hover {
     color: $style-color-additional2;
@@ -58,7 +133,7 @@
   height: 455px;
   display: block;
   text-align: center;
-  margin: 0 auto 42px auto;
+  margin-bottom: 42px;
   position: relative;
 
   &::after {
@@ -75,6 +150,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 457px;
+    margin-bottom: 55px;
 
     &::after {
       left: 363px;
