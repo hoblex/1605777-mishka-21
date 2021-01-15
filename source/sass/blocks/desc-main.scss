@@ -8,14 +8,21 @@
   @media (min-width: $tablet-width) {
     height: 520px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+    margin-bottom: 77px;
+  }
 }
 
 .desc-main__header {
   margin-bottom: 82px;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
+    margin-bottom: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 95px;
   }
 }
@@ -26,16 +33,18 @@
   justify-content: space-between;
 
   @include list-drop-style;
-}
 
-@media (min-width: $tablet-width) {
-  .desc-main__list {
+  @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     width: 630px;
     height: 355px;
     box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
   }
 }
 

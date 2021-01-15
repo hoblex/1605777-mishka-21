@@ -36,12 +36,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 763px;
+    height: 748px;
     padding: 158px 50px 0 50px;
-    background-position: 0 40%;
+    background-position: 0 0;
     background-size: 100%;
     background-image: url("../img/hero-desktop.png");
-    margin: 0;
+    margin-bottom: 70px;
 
     &::after {
       content: "";
