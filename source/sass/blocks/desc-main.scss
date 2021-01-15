@@ -2,15 +2,22 @@
   display: flex;
   flex-direction: column;
   min-width: 260px;
+  max-width: 1050px;
   height: 760px;
   margin-bottom: 62px;
 
+  .container {
+    box-sizing: border-box;
+
+    @include outline;
+  }
+
   @media (min-width: $tablet-width) {
     height: 520px;
+    min-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 175px;
     margin-bottom: 77px;
   }
 }
@@ -24,6 +31,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 95px;
+    margin-left: 175px;
   }
 }
 
@@ -45,6 +53,7 @@
 
   @media (min-width: $desktop-width) {
     width: 640px;
+    margin-left: 175px;
   }
 }
 

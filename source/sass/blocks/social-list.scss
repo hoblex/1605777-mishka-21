@@ -1,7 +1,7 @@
 .social-list {
   display: block;
   height: 80px;
-  min-width: 260px;
+  //min-width: 260px;
   border-bottom: 1px solid $footer-border-color;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +14,7 @@
 .social-list__container {
   display: flex;
   justify-content: space-between;
-  max-width: 142px;
+  width: 142px;
   margin: 0 auto;
   height: 80px;
   padding-top: 3px;

@@ -3,6 +3,7 @@
   color: $primary-color;
   height: 795px;
   min-width: 260px;
+  max-width: 1050px;
   display: block;
   margin-bottom: 31px;
 
@@ -19,6 +20,8 @@
     max-height: 732px;
     padding: 0 50px;
     margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
