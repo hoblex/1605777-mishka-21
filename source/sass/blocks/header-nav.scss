@@ -86,7 +86,7 @@
   font-weight: bold;
   height: 79px;
   min-width: 260px;
-  padding-left: 76px;
+  //padding-left: 76px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -116,6 +116,9 @@
 .header-nav__form-label {
   cursor: pointer;
   position: relative;
+  min-width: 214px;
+  padding-left: 76px;
+
 
   @media (min-width: $tablet-width) {
     width: 18px;
@@ -127,7 +130,7 @@
 
 .header-nav__form-icon {
   position: absolute;
-  left: -42px;
+  left: 34px;
   top: 5px;
 
   path {

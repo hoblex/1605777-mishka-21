@@ -9,7 +9,7 @@
 <body class="page-body">
 <header class="page-header">
   <h1 class="visually-hidden">Сайт магазина Мишка</h1>
-  <nav class="header-nav  header-nav--closed">
+  <nav class="header-nav  header-nav--opened">
     <a class="page-header__logo-link" href="index.html" aria-label="Главная страница">
       <picture class="page-header__logo-image">
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -210,21 +210,6 @@
 <!--    <button class="regular-button form-size__submit"  type="submit">Добавить</button>-->
 <!--  </form>-->
 <!--</section>-->
-<script>
-  let navMain = document.querySelector('.header-nav');
-  let navToggle = document.querySelector('.header-nav__toggle');
-
-  navMain.classList.remove('header-nav--nojs');
-
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('header-nav--closed')) {
-      navMain.classList.remove('header-nav--closed');
-      navMain.classList.add('header-nav--opened');
-    } else {
-      navMain.classList.add('header-nav--closed');
-      navMain.classList.remove('header-nav--opened');
-    }
-  });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
