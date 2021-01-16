@@ -21,7 +21,7 @@
     align-items: center;
     margin-right: auto;
     min-width: 0;
-    width: 390px;
+    width: 405px;
     height: auto;
   }
 }
@@ -59,11 +59,25 @@
     &:nth-child(4) {
       display: flex;
       font-size: 15px;
+      height: 60px;
+      width: 184px;
     }
 
     &:nth-child(1),
     &:nth-child(2) {
       font-size: 17px;
+      height: 89px;
+      width: 184px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      margin-right: 20px;
+    }
+
+
+    &:nth-child(1) {
+      border-right: 1px solid $outline-light-color;
     }
   }
 }

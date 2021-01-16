@@ -22,7 +22,7 @@
     flex-wrap: nowrap;
     z-index: 1;
     height: 131px;
-    align-items: start;
+    align-items: center;
   }
 }
 
@@ -159,6 +159,10 @@
 
   @media (min-width: $tablet-width) {
     order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: end;
   }
 }
 
