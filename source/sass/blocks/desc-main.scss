@@ -1,35 +1,85 @@
 .desc-main {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  height: 758px;
+  min-width: 260px;
+  max-width: 1050px;
+  height: 760px;
+  margin-bottom: 62px;
+
+  .container {
+    box-sizing: border-box;
+
+    @include outline;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 520px;
+    min-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 77px;
+  }
+}
+
+.desc-main__header {
+  margin-bottom: 82px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 95px;
+    margin-left: 175px;
+  }
 }
 
 .desc-main__list {
-  @include list-drop-style;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 671px;
+
+  @include list-drop-style;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 630px;
+    height: 355px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
+    margin-left: 175px;
+  }
 }
 
 .desc-main__list-item {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  max-width: 260px;
+  margin-bottom: 83px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 110px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 
   &--ecology {
-    height: 94px;
-    position: relative;
-
     &::before {
       content: "";
       position: absolute;
       width: 33px;
       height: 38px;
-      top: 0;
+      top: -55px;
       left: 8px;
       background-image: url("../img/icon-ecology.svg");
       background-repeat: no-repeat;
@@ -37,15 +87,12 @@
   }
 
   &--scandinavian {
-    height: 93px;
-    position: relative;
-
     &::before {
       content: "";
       position: absolute;
       width: 47px;
       height: 27px;
-      top: 0;
+      top: -55px;
       left: 0;
       background-image: url("../img/icon-scandinavian.svg");
       background-repeat: no-repeat;
@@ -53,31 +100,29 @@
   }
 
   &--likes {
-    height: 88px;
-    position: relative;
-
     &::before {
       content: "";
       position: absolute;
       width: 34px;
       height: 27px;
-      top: 0;
+      top: -53px;
       left: 7px;
       background-image: url("../img/icon-likes.svg");
       background-repeat: no-repeat;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &--knitting {
-    height: 91px;
-    position: relative;
-
     &::before {
       content: "";
       position: absolute;
       width: 35px;
       height: 34px;
-      top: 0;
+      top: -55px;
       left: 3px;
       background-image: url("../img/icon-knitting.svg");
       background-repeat: no-repeat;
@@ -85,15 +130,16 @@
   }
 
   &--domestic {
-    height: 89px;
-    position: relative;
+    @media (min-width: $tablet-width) {
+      max-width: 325px;
+    }
 
     &::before {
       content: "";
       position: absolute;
       width: 55px;
       height: 23px;
-      top: 0;
+      top: -55px;
       left: -6px;
       background-image: url("../img/icon-domestic.svg");
       background-repeat: no-repeat;
@@ -101,15 +147,14 @@
   }
 
   &--packaging {
-    height: 92px;
-    position: relative;
+    margin-bottom: 0;
 
     &::before {
       content: "";
       position: absolute;
       width: 33px;
       height: 32px;
-      top: 0;
+      top: -55px;
       left: 3px;
       background-image: url("../img/icon-packaging.svg");
       background-repeat: no-repeat;

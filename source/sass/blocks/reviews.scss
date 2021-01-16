@@ -1,28 +1,133 @@
 .reviews {
+  height: 629px;
+  margin-bottom: 36px;
+  position: relative;
+  min-width: 260px;
+  max-width: 1050px;
+
+  @media (min-width: $tablet-width) {
+    height: 542px;
+    background-image: url("../img/review.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 547px;
+    background-position: 50px 0;
+  }
+}
+
+.reviews__container {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  position: relative;
-  height: 679px;
 
   @include block-underline;
+
+  @media (min-width: $tablet-width) {
+    height: 383px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+    height: 350px;
+    align-content: space-between;
+    margin-bottom: 120px;
+  }
+}
+
+.reviews__header {
+  display: inline-block;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
+}
+
+.reviews__slider {
+  @media (min-width: $tablet-width) {
+    order: 20;
+  }
 }
 
 .reviews__text {
   font-size: 15px;
   color: $primary-color;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__author-name {
+  display: block;
   font-style: normal;
   font-weight: bold;
+  max-width: 260px;
+  margin-bottom: 30px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__author-nick {
   font-weight: normal;
   color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.reviews__nav {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 1;
+    width: 180px;
+    transform: translate(0, -80px);
+  }
 }
 
 .reviews__feedback-button {
   color: $primary-color;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 175px;
+    min-width: 175px;
+    margin: 0;
+    font-size: 17px;
+  }
 }

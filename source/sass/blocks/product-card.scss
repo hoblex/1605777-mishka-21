@@ -11,6 +11,11 @@
   height: 195px;
 }
 
+.product-card__image-link {
+  margin: 0;
+  height: 195px;
+}
+
 .product-card__content-wrap {
   box-sizing: border-box;
   border: 1px solid $outline-light-color;
@@ -62,7 +67,9 @@
 
 .product-card__price {
   margin: 0;
+  font-size: 15px;
   line-height: 24px;
+  font-weight: bold;
 }
 
 .product-card__order-link {

@@ -1,16 +1,66 @@
 .product-main {
   position: relative;
-  display: flex;
-  flex-direction: column;
   color: $primary-color;
   height: 795px;
   min-width: 260px;
+  max-width: 1050px;
+  display: block;
+  margin-bottom: 31px;
 
   @include block-underline;
+
+  @media (min-width: $tablet-width) {
+    max-height: 603px;
+    min-width: 668px;
+    padding: 0 50px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 732px;
+    padding: 0 50px;
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.product-main__content-container {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 573px;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 636px;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
 }
 
 .product-main__header {
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 292px;
+    margin-bottom: 33px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+    z-index: 1;
+  }
 }
 
 .product-main__label {
@@ -18,19 +68,107 @@
   color: $style-color;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 0 1px 0;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 17px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    //height: 50px;
+    margin-bottom: 45px;
+    order: 10;
+    margin-left: auto;
+    margin-right: 13px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    height: 570px;
+    margin: 0 42px 0 0;
+  }
 }
 
 .product-main__desc {
-  margin: 0;
+  margin: 0 auto 18px 0;
   font-size: 15px;
   line-height: 24px;
   width: 260px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 292px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 26px 0;
+    height: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 36px 0;
+  }
 }
+
+.product-main__image {
+  margin: 0 auto 27px auto;
+  display: block;
+  width: 260px;
+  height: 315px;
+}
+
+@media (min-width: $tablet-width) {
+  .product-main__image {
+    width: 334px;
+    height: 404px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    order: 20;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-main__image {
+    width: 526px;
+    height: 636px;
+  }
+}
+
 
 .product-main__price {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  margin: 0 auto 25px auto;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 292px;
+    margin: 0 0 33px 0;
+  }
+}
+
+.product-main__table-container {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 292px;
+    margin: 0 0 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 57px 117px 0;
+  }
 }
 
 .product-main__table {
@@ -39,9 +177,14 @@
   display: grid;
   margin: 0 0 28px 0;
   grid-template-rows: 40px 40px 40px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-column-gap: 0;
-  width: 260px;
+  min-width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+    margin: 0;
+  }
 }
 
 .product-main__table-title {
@@ -50,6 +193,11 @@
   margin: 0;
   display: flex;
   align-items: center;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 95px;
+  }
 }
 
 .product-main__table-desc {
@@ -58,4 +206,28 @@
   border-bottom: 1px solid $outline-light-color;
   display: flex;
   align-items: center;
+  height: 39px;
+}
+
+.product-main__order-link {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  max-width: 292px;
+  height: 52px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  outline: 2px solid $primary-color;
+  outline-offset: -2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }

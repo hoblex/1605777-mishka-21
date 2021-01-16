@@ -1,3 +1,8 @@
+@mixin outline {
+  outline: 3px solid plum;
+  outline-offset: -2px;
+}
+
 @mixin list-drop-style {
   list-style: none;
   margin: 0;
@@ -9,9 +14,22 @@
     content: "";
     position: absolute;
     bottom: 0;
+    left: 0;
     height: 6px;
-    width: 320px;
+    width: 100%;
     background-image: url("../img/zigzag-line-mobile.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 17px;
+      background-image: url("../img/zigzag-line-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      left: 50px;
+      width: 1050px;
+      background-image: url("../img/zigzag-line-desktop.svg");
+    }
   }
 }

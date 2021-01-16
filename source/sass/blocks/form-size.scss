@@ -1,36 +1,53 @@
 .form-size {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  min-width: 260px;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .form-size__fieldset {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   border: none;
   padding: 0;
-  width: 260px;
-  margin: 0 0 31px 0;
+  min-width: 260px;
+  max-width: 350px;
+  margin: 0 auto 31px auto;
 }
 
 .form-size__title {
+  display: block;
   color: $primary-color;
   font-size: 15px;
-  width: 162px;
+  width: auto;
   padding: 0;
-  margin: 0 auto 21px auto;
+  margin: 0 auto 30px auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .form-size__label {
+  display: block;
   font-size: 17px;
   line-height: 16px;
   color: $primary-color;
-  width: 82px;
+  min-width: 82px;
   height: 52px;
-  display: inline-block;
-  vertical-align: middle;
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
 }
 
 .form-size__checkbox {
   appearance: none;
-  width: 82px;
+  min-width: 82px;
   height: 52px;
   border: 2px solid $primary-color-10;
   cursor: pointer;
@@ -50,87 +67,29 @@
     border-color: $modal-form-checked-color;
   }
 
-  &--s {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "S";
-      font-weight: bold;
-      font-size: 17px;
-      line-height: 16px;
-      left: 34px;
-      top: 18px;
-    }
-  }
-
-  &--m {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "M";
-      font-weight: bold;
-      font-size: 17px;
-      line-height: 16px;
-      left: 34px;
-      top: 18px;
-    }
-  }
-
-  &--l {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "L";
-      font-weight: bold;
-      font-size: 17px;
-      line-height: 16px;
-      left: 34px;
-      top: 18px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 112px;
   }
 }
 
-//.form-size__checkbox {
-//  position: relative;
-//  padding: 0;
-//  margin: 0;
-//  appearance: none;
-//
-//  &::after {
-//    content: "";
-//    position: absolute;
-//    width: 82px;
-//    height: 52px;
-//    background-size: 82px 52px;
-//    background-image: url("../img/size-btn.svg");
-//    background-repeat: no-repeat;
-//    cursor: pointer;
-//    left: -35px;
-//    top: -31px;
-//    padding-right: 10px;
-//  }
-//
-//  &:checked::after {
-//    background-image: url("../img/size-btn-active.svg");
-//  }
-//
-//  &:hover::after {
-//    background-image: url("../img/size-btn-hover.svg");
-//  }
-//
-//  &:active::after {
-//    background-image: url("../img/size-btn-active.svg");
-//  }
-//}
+.form-size__checkbox-name {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  transform: translate(-50%, 50%);
+}
 
 .form-size__submit {
   background-color: $style-color;
   color: $basic-white;
   outline: none;
   border: none;
+  margin: 0 auto;
+  min-width: 100%;
+  max-width: 350px;
 
   &:hover {
     background-color: $style-color;

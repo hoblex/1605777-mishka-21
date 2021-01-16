@@ -1,8 +1,17 @@
 .footer-main-copyright {
+  width: 182px;
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
-  height: 60px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    height: 80px;
+  }
 }
 
 .footer-main-copyright__link {
@@ -12,6 +21,18 @@
   color: $basic-black;
   justify-content: space-between;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 35px;
+  }
+
+  &:hover path {
+    fill: $style-color-additional2;
+  }
+
+  &:active path {
+    fill: $style-color-additional2-30;
+  }
 }
 
 .footer-main-copyright__title {
@@ -19,11 +40,14 @@
   padding: 0;
   margin: 0;
   vertical-align: middle;
+  height: 35px;
 }
 
 .footer-main-copyright__img {
   display: inline-block;
+  vertical-align: middle;
+  height: 35px;
   padding: 0;
   margin: 0;
-  vertical-align: middle;
+  transform: translate(0, -15%);
 }

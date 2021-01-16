@@ -22,19 +22,22 @@
 }
 
 .form__legend-name {
-  display: inline-block;
-  vertical-align: middle;
-  width: 60px;
-}
+  position: relative;
+  display: block;
 
-.form__legend-line {
-  display: inline-block;
-  vertical-align: middle;
-  border: none;
-  height: 1px;
-  margin: 0 auto;
-  width: 200px;
-  background-color: $style-color;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    right: 0;
+    top: 8px;
+    border-top: 1px solid $style-color;
+  }
+
+  &--email::after {
+    width: 186px;
+  }
 }
 
 .form__label {
@@ -69,97 +72,73 @@
 }
 
 .form__control--radio {
+  width: 42px;
   height: 42px;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    width: 42px;
-    height: 42px;
-    background-size: 42px 42px;
-    left: 0;
-    top: 0;
-    background-image: url("../img/radio-off.svg");
-    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    background-color: $style-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    transform: translate(58%, 58%);
+    display: none;
   }
 
-  &:hover::before {
-    background-image: url("../img/radio-off-hover.svg");
+  &:checked::after {
+    display: block;
   }
 
-  &:active::before {
-    background-image: url("../img/radio-off-active.svg");
+  &:hover {
+    border-color: $style-color;
   }
 
-  &:focus::before {
-    background-image: url("../img/radio-off-hover.svg");
-  }
-
-  &:checked::before {
-    background-image: url("../img/radio-on.svg");
-  }
-
-  &:checked:hover::before {
-    background-image: url("../img/radio-on-hover.svg");
-  }
-
-  &:checked:active::before {
-    background-image: url("../img/radio-on-active.svg");
-  }
-
-  &:checked:focus::before {
-    background-image: url("../img/radio-on-hover.svg");
+  &:active,
+  &:focus {
+    border-color: $basic-black-30;
   }
 }
-
 
 .form__control--checkbox {
   height: 38px;
+  width: 38px;
+  border: 2px solid $primary-color;
+  outline: none;
+  position: relative;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    width: 38px;
-    height: 38px;
-    background-size: 38px 38px;
-    left: 0;
-    top: 0;
-    background-image: url("../img/checkbox-off.svg");
-    background-repeat: no-repeat;
+    width: 21px;
+    height: 11px;
+    border-top: 1.5px solid $basic-black;
+    border-right: 1.5px solid $basic-black;
+    transform: translate(25%, 50%) rotate(135deg);
+    display: none;
   }
 
-  &:hover::before {
-    background-image: url("../img/checkbox-off-hover.svg");
+  &:checked::after {
+    display: block;
   }
 
-  &:active::before {
-    background-image: url("../img/checkbox-off-active.svg");
+  &:hover {
+    border-color: $style-color;
   }
 
-  &:focus::before {
-    background-image: url("../img/checkbox-off-hover.svg");
-  }
-
-  &:checked::before {
-    background-image: url("../img/checkbox-on.svg");
-  }
-
-  &:checked:hover::before {
-    background-image: url("../img/checkbox-on-hover.svg");
-  }
-
-  &:checked:active::before {
-    background-image: url("../img/checkbox-on-active.svg");
-  }
-
-  &:checked:focus::before {
-    background-image: url("../img/checkbox-on-hover.svg");
+  &:active,
+  &:focus {
+    border-color: $basic-black-30;
   }
 }
 
-.form__control--text,
-.form__control--tel,
-.form__control--email {
+.form__control--text {
   position: relative;
   border: none;
   outline: none;
@@ -178,101 +157,35 @@
   }
 
   &::placeholder {
-    color: $placeholder-default-color;
+    color: $basic-black-30;
   }
 }
 
-.form__control--tel-icon {
+.form__control--connect-icon {
   width: 25px;
   height: 24px;
   position: absolute;
   right: 7px;
   top: 0;
-}
 
-.form__control--tel-icon path {
-  opacity: 0.2;
-}
+  & path {
+    opacity: 0.2;
+  }
 
-.form__control--tel {
-  &:focus-within + .form__control--tel-icon path,
-  &:focus + .form__control--tel-icon path,
-  &:active + .form__control--tel-icon path,
-  &:hover + .form__control--tel-icon path {
+  &:hover path {
     fill: $style-color;
     opacity: 1;
   }
 }
 
-.form__control--tel-icon:hover path {
-  fill: $style-color;
-  opacity: 1;
-}
-
-.form__label--tel {
-  //&::after {
-  //  content: "";
-  //  position: absolute;
-  //  width: 25px;
-  //  height: 24px;
-  //  right: 7px;
-  //  top: 0;
-  //  background-image: url("../img/icon-phone.svg");
-  //  background-repeat: no-repeat;
-  //}
-  //
-  //&:hover::after,
-  //&:active::after,
-  //&:focus::after {
-  //  background-image: url("../img/icon-phone-hover.svg");
-  //}
-}
-
-.form__control--email-icon {
-  width: 32px;
-  height: 21px;
-  position: absolute;
-  right: 3px;
-  top: 0;
-}
-
-.form__control--email-icon path {
-  opacity: 0.2;
-}
-
-.form__control--email {
-  &:focus-within + .form__control--email-icon path,
-  &:focus + .form__control--email-icon path,
-  &:active + .form__control--email-icon path,
-  &:hover + .form__control--email-icon path {
+.form__control--connect {
+  &:focus-within + .form__control--connect-icon path,
+  &:focus + .form__control--connect-icon path,
+  &:active + .form__control--connect-icon path,
+  &:hover + .form__control--connect-icon path {
     fill: $style-color;
     opacity: 1;
   }
-}
-
-.form__control--email-icon:hover path {
-  fill: $style-color;
-  opacity: 1;
-}
-
-
-.form__label--email {
-  //&::after {
-  //  content: "";
-  //  position: absolute;
-  //  width: 32px;
-  //  height: 21px;
-  //  right: 3px;
-  //  top: 0;
-  //  background-image: url("../img/icon-email.svg");
-  //  background-repeat: no-repeat;
-  //}
-  //
-  //&:hover::after,
-  //&:active::after,
-  //&:focus::after {
-  //  background-image: url("../img/icon-email-hover.svg");
-  //}
 }
 
 .form__control--textarea {
@@ -294,7 +207,7 @@
   }
 
   &::placeholder {
-    color: $placeholder-default-color;
+    color: $basic-black-30;
   }
 }
 

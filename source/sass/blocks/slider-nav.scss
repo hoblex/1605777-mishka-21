@@ -2,32 +2,34 @@
   display: flex;
   width: 260px;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 176px;
+    margin-bottom: 0;
+  }
 }
 
-.slider-nav__button-prev,
-.slider-nav__button-next {
+.slider-nav__button {
   width: 130px;
   height: 52px;
   border: 1px solid $outline-light-color;
   cursor: pointer;
+  background: transparent no-repeat left 50% top 50%;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 90px;
+  }
 
   &:focus {
     outline: none;
   }
 
-  &:hover {
+  &:hover path {
     opacity: 0.6;
   }
 
-  &:active {
+  &:active path {
     opacity: 0.3;
   }
-}
-
-.slider-nav__button-prev {
-  background: transparent url("../img/huge-arrow-left.svg") no-repeat left 50% top 50%;
-}
-
-.slider-nav__button-next {
-  background: transparent url("../img/huge-arrow-right.svg") no-repeat left 50% top 50%;
 }
