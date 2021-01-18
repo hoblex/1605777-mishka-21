@@ -5,21 +5,26 @@
 }
 
 .page-form__header {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 177px;
+  align-items: center;
+  height: 170px;
   min-width: 320px;
   background-color: $image-background-color;
   font-size: 27px;
-  margin-bottom: 54px;
+  margin-bottom: 20px;
+  margin-top: 0;
   border-top: 1px solid $outline-light-color;
   position: relative;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    height: 238px;
-    margin-bottom: 99px;
+    padding-top: 25px;
+    height: 225px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 68px;
 
     &::after {
       content: "";
@@ -33,7 +38,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 272px;
+    height: 250px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 10px;
+    margin-bottom: 120px;
 
     &::after {
       content: "";
@@ -45,6 +54,11 @@
       background-image: url("../img/zigzag-fill-desktop.svg");
     }
   }
+}
+
+.page-form__header-name {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .page-form__subtitle {
@@ -60,7 +74,7 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 63px;
+    margin-bottom: 70px;
     width: 768px;
     max-width: 768px;
     height: 50px;
@@ -72,5 +86,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    margin-bottom: 75px;
   }
 }
