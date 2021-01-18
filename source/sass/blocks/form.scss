@@ -161,6 +161,7 @@
   display: block;
   position: relative;
   box-sizing: border-box;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     min-width: 0;
@@ -199,8 +200,8 @@
   }
 
   &--email::after {
-    min-width: 182px;
-    width: calc(100% - 200px);
+    min-width: 200px;
+    //width: calc(100% - 200px);
     left: 78px;
   }
 }
