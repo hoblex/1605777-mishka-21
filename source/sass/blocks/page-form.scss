@@ -2,25 +2,90 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 0 55px 0;
 }
 
 .page-form__header {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 177px;
-  width: 320px;
+  align-items: center;
+  height: 170px;
+  min-width: 320px;
   background-color: $image-background-color;
   font-size: 27px;
-  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+  border-top: 1px solid $outline-light-color;
+  position: relative;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    height: 225px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 68px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      height: 24px;
+      width: 100%;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 250px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 10px;
+    margin-bottom: 120px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -17px;
+      left: 0;
+      height: 34px;
+      width: 100%;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+    }
+  }
+}
+
+.page-form__header-name {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .page-form__subtitle {
   color: $primary-color;
   font-size: 13px;
   line-height: 24px;
-  width: 260px;
-  margin: 0;
+  min-width: 260px;
+  max-width: 480px;
+  margin: 0 auto 29px auto;
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 70px;
+    width: 768px;
+    max-width: 768px;
+    height: 50px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 702px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin-bottom: 75px;
+  }
 }

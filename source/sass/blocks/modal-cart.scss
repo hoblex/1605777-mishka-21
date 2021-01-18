@@ -7,11 +7,13 @@
   border: 1px solid $modal-border-color;
   box-shadow: 0 5px 10px $modal-shadow-color;
   padding-top: 28px;
-  margin: 0 auto;
+  //margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 556px) {
     width: 556px;
+    margin: 0 auto;
   }
+
   //position: fixed;
   //left: 50%;
   //top: 50%;

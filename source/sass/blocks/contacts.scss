@@ -7,7 +7,6 @@
   max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -26,6 +25,7 @@
     height: 457px;
     width: 1050px;
     margin-bottom: 105px;
+    padding-left: 50px;
   }
 }
 
