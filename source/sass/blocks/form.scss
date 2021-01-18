@@ -573,7 +573,7 @@
   }
 }
 
-.form__control--connect-icon-tel {
+.form__control-icon--tel {
   width: 25px;
   height: 24px;
   right: 7px;
@@ -585,7 +585,7 @@
   }
 }
 
-.form__control--connect-icon-email {
+.form__control-icon--email {
   width: 32px;
   height: 21px;
   right: 4px;
@@ -597,8 +597,7 @@
   }
 }
 
-.form__control--connect-icon-tel,
-.form__control--connect-icon-email {
+.form__control-icon {
   position: absolute;
 
   & path {
@@ -612,10 +611,10 @@
 }
 
 .form__control--connect {
-  &:focus-within + .form__control--connect-icon path,
-  &:focus + .form__control--connect-icon path,
-  &:active + .form__control--connect-icon path,
-  &:hover + .form__control--connect-icon path {
+  &:focus-within + .form__control-icon path,
+  &:focus + .form__control-icon path,
+  &:active + .form__control-icon path,
+  &:hover + .form__control-icon path {
     fill: $style-color;
     opacity: 1;
   }
