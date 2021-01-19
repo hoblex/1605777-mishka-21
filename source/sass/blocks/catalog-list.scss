@@ -1,3 +1,28 @@
 .catalog-list {
   @include list-drop-style;
+  padding: 0;
+  display: flex;
+  min-height: 1207px;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 659px;
+    width: 1050px;
+    margin-bottom: 0;
+  }
+}
+
+.catalog-list__item {
+  &:nth-last-child {
+    margin-bottom: 0;
+  }
 }
