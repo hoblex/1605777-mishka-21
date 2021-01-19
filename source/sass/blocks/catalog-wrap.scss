@@ -1,4 +1,16 @@
 .catalog-wrap {
-  display: flex;
-  flex-direction: column;
+  min-width: 260px;
+  max-width: 1050px;
+  min-height: 1207px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1110px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 659px;
+    margin-bottom: 58px;
+  }
 }
