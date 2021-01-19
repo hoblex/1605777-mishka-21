@@ -24,7 +24,7 @@
     justify-content: flex-end;
     height: 457px;
     width: 1050px;
-    margin-bottom: 105px;
+    margin-bottom: 110px;
     padding-left: 50px;
   }
 }
@@ -86,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
   }
 }
 
@@ -135,7 +135,7 @@
 }
 
 .contacts__data-header {
-  width: 76px;
+  width: 74px;
   font-size: 14px;
   display: inline-block;
   vertical-align: middle;
@@ -206,7 +206,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 457px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 
     &::after {
       left: 363px;
