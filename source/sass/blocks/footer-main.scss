@@ -20,6 +20,10 @@
       height: 143px;
       width: 100%;
     }
+
+    @media (min-width: $desktop-width) {
+      height: 145px;
+    }
   }
 }
 
