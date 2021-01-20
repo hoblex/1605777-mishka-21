@@ -1,12 +1,12 @@
 .reviews {
-  height: 629px;
+  min-height: 629px;
   margin-bottom: 36px;
   position: relative;
   min-width: 260px;
   max-width: 1050px;
 
   @media (min-width: $tablet-width) {
-    height: 542px;
+    min-height: 542px;
     background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
     display: flex;
@@ -15,8 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 547px;
+    min-height: 547px;
     background-position: 50px 0;
+    margin-bottom: 69px;
   }
 }
 
@@ -27,7 +28,7 @@
   @include block-underline;
 
   @media (min-width: $tablet-width) {
-    height: 383px;
+    min-height: 379px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -35,10 +36,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 379px;
     margin-left: 175px;
-    height: 350px;
-    align-content: space-between;
-    margin-bottom: 120px;
+    margin-bottom: 13px;
   }
 }
 
@@ -68,11 +68,11 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
   }
 }
 
@@ -103,7 +103,7 @@
   color: $primary-color;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 8px;
+  margin-top: 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -121,7 +121,11 @@
     margin-right: 0;
     z-index: 1;
     width: 180px;
-    transform: translate(0, -80px);
+    transform: translate(0, -84px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(0, -72px);
   }
 }
 

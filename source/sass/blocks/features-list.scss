@@ -31,13 +31,14 @@
     min-width: 260px;
     color: $basic-white;
     font-weight: bold;
-    padding: 0 30px;
+    padding: 0 30px 10px 30px;
     font-size: 19px;
     line-height: 24px;
-    height: 103px;
+    min-height: 103px;
     position: relative;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
       height: 107px;
