@@ -57,3 +57,16 @@
     height: 72px;
   }
 }
+
+.page-header__logo-image--main-page img {
+  cursor: default;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+}
