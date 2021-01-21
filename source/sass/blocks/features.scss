@@ -11,6 +11,10 @@
   padding-top: 68px;
   border-top: 1px solid $outline-light-color;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     height: 746px;
     background-position: 50% 50%;
@@ -22,6 +26,10 @@
     justify-content: space-between;
     position: relative;
     margin-bottom: 51px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.png");
+    }
 
     &::after {
       content: "";
@@ -44,6 +52,10 @@
     margin-bottom: 70px;
     margin-right: auto;
     margin-left: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.png");
+    }
 
     &::after {
       content: "";
