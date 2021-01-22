@@ -27,8 +27,12 @@
 
 .product-main__content-container {
   display: block;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    max-width: 1050px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
