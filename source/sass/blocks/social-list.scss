@@ -28,13 +28,14 @@
 .social-list__link {
   width: 22px;
   height: 21px;
+  fill: $social-icon-color;
 
 
-  &:hover path {
+  &:hover {
     fill: $style-color-additional2;
   }
 
-  &:active path {
+  &:active {
     fill: $style-color-additional2-30;
   }
 }

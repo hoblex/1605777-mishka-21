@@ -26,11 +26,11 @@
     height: 35px;
   }
 
-  &:hover path {
+  &:hover .footer-main-copyright__img {
     fill: $style-color-additional2;
   }
 
-  &:active path {
+  &:active .footer-main-copyright__img {
     fill: $style-color-additional2-30;
   }
 }
@@ -50,4 +50,5 @@
   padding: 0;
   margin: 0;
   transform: translate(0, -23%);
+  fill: $academy-icon-color;
 }

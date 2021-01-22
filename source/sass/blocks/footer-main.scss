@@ -29,11 +29,13 @@
 
 
 .footer-main__logo-image {
-  &:hover path {
+  fill: $basic-black;
+
+  &:hover {
     fill: $style-color-additional2;
   }
 
-  &:active path {
+  &:active {
     fill: $style-color-additional2-30;
   }
 }
