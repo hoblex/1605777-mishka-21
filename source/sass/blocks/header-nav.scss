@@ -131,16 +131,13 @@
   position: absolute;
   left: 32px;
   top: 6px;
+  fill: $basic-black-20;
 
-  path {
-    fill: $basic-black-20;
-  }
-
-  &:hover path {
+  &:hover {
     fill: $style-color;
   }
 
-  &:active path {
+  &:active {
     fill: $style-color-30;
   }
 
@@ -178,14 +175,14 @@
   margin: 0;
   order: 0;
 
-  & path {
+  & .header-nav__cart-icon {
     fill: $basic-black-20;
   }
 
   &:hover {
     color: $basic-black-60;
 
-    & path {
+    & .header-nav__cart-icon {
       fill: $style-color;
     }
   }
@@ -193,7 +190,7 @@
   &:active {
     color: $basic-black-30;
 
-    & path {
+    & .header-nav__cart-icon {
       fill: $style-color-30;
     }
   }

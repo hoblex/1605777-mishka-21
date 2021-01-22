@@ -27,6 +27,7 @@
 }
 
 .product-card__image-link img {
+  background-color: $image-background-color;
   width: 260px;
   height: 195px;
 
@@ -188,16 +189,17 @@
   display: inline-block;
   vertical-align: middle;
   transform: translate(0, -5px);
+  cursor: pointer;
 
-  & path {
+  & .product-card__order-icon {
     fill: $basic-black-20;
   }
 
-  &:hover path {
+  &:hover .product-card__order-icon {
     fill: $style-color;
   }
 
-  &:active path {
+  &:active .product-card__order-icon {
     fill: $style-color-30;
   }
 }

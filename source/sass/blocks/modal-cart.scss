@@ -2,22 +2,28 @@
   height: 337px;
   min-width: 320px;
   max-width: 556px;
-  display: block;
+  display: none;
   box-sizing: border-box;
   border: 1px solid $modal-border-color;
   box-shadow: 0 5px 10px $modal-shadow-color;
+  background-color: $basic-white;
   padding-top: 28px;
   //margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 100;
 
   @media (min-width: 556px) {
     width: 556px;
     margin: 0 auto;
   }
 
-  //position: fixed;
-  //left: 50%;
-  //top: 50%;
-  //transform: translate(0, -50%);
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .modal-cart__header {
@@ -33,4 +39,8 @@
     line-height: 57px;
     width: 355px;
   }
+}
+
+.modal-cart--show {
+  display: block;
 }
