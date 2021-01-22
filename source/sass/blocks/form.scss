@@ -655,22 +655,19 @@
 
 .form__control-icon {
   position: absolute;
+  opacity: 0.2;
 
-  & path {
-    opacity: 0.2;
-  }
-
-  &:hover path {
+  &:hover {
     fill: $style-color;
     opacity: 1;
   }
 }
 
 .form__control--connect {
-  &:focus-within + .form__control-icon path,
-  &:focus + .form__control-icon path,
-  &:active + .form__control-icon path,
-  &:hover + .form__control-icon path {
+  &:focus-within + .form__control-icon,
+  &:focus + .form__control-icon,
+  &:active + .form__control-icon,
+  &:hover + .form__control-icon {
     fill: $style-color;
     opacity: 1;
   }
