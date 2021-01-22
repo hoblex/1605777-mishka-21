@@ -1,7 +1,7 @@
 //Обработка событий кнопки открытия/закрытия главного меню в мобильном режиме
 
-let navMain = document.querySelector('.header-nav');
-  let navToggle = document.querySelector('.header-nav__toggle');
+var navMain = document.querySelector('.header-nav');
+var navToggle = document.querySelector('.header-nav__toggle');
 
   navMain.classList.remove('header-nav--nojs');
 
@@ -53,13 +53,12 @@ let navMain = document.querySelector('.header-nav');
 //   }
 // };
 
-
 //Обработка событий модального окна "Заказ товара дня"
 
-const buttonProductToBuy = document.querySelectorAll('.form-to-order');
-const displayModalProductToBuy = document.querySelector('.modal-cart');
+var buttonProductToBuy = document.querySelectorAll('.form-to-order');
+var displayModalProductToBuy = document.querySelector('.modal-cart');
 
-for (let i = 0; i < buttonProductToBuy.length; i++) {
+for (var i = 0; i < buttonProductToBuy.length; i++) {
   buttonProductToBuy[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     displayModalProductToBuy.classList.add("modal-cart--show");
