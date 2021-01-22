@@ -110,15 +110,14 @@ exports.copy = copy;
 
 const clean = () => {
   return del("build");
-}
-
-exports.clean = clean;
+};
 
 // Server
+
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -135,7 +134,6 @@ const reload = done => {
   sync.reload();
   done();
 }
-
 // Watcher
 
 const watcher = () => {
@@ -144,35 +142,35 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
-//Build
+// Build
 
 const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
     html,
+    scripts,
     sprite,
     copy,
-    scripts,
     images,
     createWebp
-  )
-);
+  ));
 
 exports.build = build;
+
+// Default
 
 exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
     html,
+    scripts,
     sprite,
     copy,
-    scripts,
     createWebp
   ),
   gulp.series(
     server,
     watcher
-  )
-);
+  ));
