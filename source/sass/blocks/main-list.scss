@@ -2,15 +2,12 @@
   display: flex;
   flex-direction: column;
   line-height: 24px;
-  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: start;
     align-items: center;
     height: 69px;
-    margin-right: auto;
-    min-width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +16,6 @@
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: center;
-    margin-right: auto;
     min-width: 0;
     width: 405px;
     height: 89px;
