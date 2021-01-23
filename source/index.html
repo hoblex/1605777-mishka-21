@@ -10,7 +10,7 @@
 <header class="page-header">
   <h1 class="visually-hidden">Сайт магазина Мишка</h1>
   <nav class="header-nav header-nav--closed header-nav--nojs">
-    <a class="header-nav__logo-link">
+    <a class="header-nav__logo-link ">
       <picture class="header-nav__logo-image header-nav__logo-image--main-page">
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" >
@@ -153,7 +153,7 @@
 </main>
 <footer class="footer-main">
   <div class="container footer-main__container">
-    <a class="footer-main__logo" href="index.html">
+    <a class="footer-main__logo" href="index.html" aria-label="Главная страница">
       <svg class="footer-main__logo-image" width="102" height="34">
         <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
       </svg>
@@ -185,7 +185,7 @@
       </div>
     </div>
     <div class="footer-main-copyright">
-      <a class="footer-main-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer-main-copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано HTML Avademy">
         <span class="footer-main-copyright__title">Разработано</span>
         <svg class="footer-main-copyright__img" width="27" height="35">
           <use xlink:href="img/sprite.svg#icon-html-academy-footer"></use>
@@ -196,7 +196,6 @@
 </footer>
 <section class="modal-cart">
   <h3 class="modal-cart__header">Добавить в&nbsp;корзину</h3>
-  <div class="overlay"></div>
   <form class="modal-cart__form form-size" action="https://echo.htmlacademy.ru" method="get">
     <fieldset class="form-size__fieldset">
       <legend class="form-size__title">Выберите размер:</legend>
@@ -206,6 +205,7 @@
     </fieldset>
     <button class="regular-button form-size__submit" type="submit">Добавить</button>
   </form>
+  <div class="overlay"></div>
 </section>
 <script src="js/script.min.js"></script>
 </body>

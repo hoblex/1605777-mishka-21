@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head class="page">
   <meta charset="utf-8">
   <title>HTML Academy: Мишка. Форма</title>
@@ -10,8 +10,8 @@
 <header class="page-header">
   <h1 class="visually-hidden">Сайт магазина Мишка</h1>
   <nav class="header-nav header-nav--closed header-nav--nojs">
-    <a class="header-nav__logo-link">
-      <picture class="header-nav__logo-image header-nav__logo-image--main-page">
+    <a class="header-nav__logo-link" href="index.html" aria-label="Главная страница">
+      <picture class="header-nav__logo-image">
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" >
         <img src="img/mishka-logo-mobile.svg" alt="Магазин ми-ми-Мишка" width="86" height="35">
@@ -120,8 +120,8 @@
   </form>
 </main>
 <footer class="footer-main">
-  <div class="container">
-    <a class="footer-main__logo" href="index.html">
+  <div class="container footer-main__container">
+    <a class="footer-main__logo" href="index.html" aria-label="Главная страница">
       <svg class="footer-main__logo-image" width="102" height="34">
         <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
       </svg>
@@ -153,7 +153,7 @@
       </div>
     </div>
     <div class="footer-main-copyright">
-      <a class="footer-main-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer-main-copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано HTML Avademy">
         <span class="footer-main-copyright__title">Разработано</span>
         <svg class="footer-main-copyright__img" width="27" height="35">
           <use xlink:href="img/sprite.svg#icon-html-academy-footer"></use>
