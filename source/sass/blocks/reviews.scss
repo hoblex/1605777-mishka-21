@@ -6,6 +6,7 @@
   max-width: 1050px;
 
   @media (min-width: $tablet-width) {
+    background-size: 350px;
     min-height: 542px;
     background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
