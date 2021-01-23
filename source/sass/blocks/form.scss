@@ -661,6 +661,8 @@
 }
 
 .form__control--connect {
+  padding-right: 40px;
+
   &:focus-within + .form__control-icon,
   &:focus + .form__control-icon,
   &:active + .form__control-icon,
