@@ -361,7 +361,6 @@
   margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    //outline: 3px solid yellow;
     display: block;
     height: 50px;
     position: absolute;
@@ -382,7 +381,6 @@
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    //outline: 3px solid yellow;
     display: block;
     height: 50px;
     position: absolute;
@@ -596,7 +594,6 @@
     line-height: 18px;
     font-size: 17px;
     color: $primary-color;
-    //display: block;
 
     @media (min-width: $tablet-width) {
       font-size: 19px;
