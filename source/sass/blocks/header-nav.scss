@@ -82,6 +82,10 @@
   box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
 }
 
+.header-nav--nojs .header-nav__toggle {
+  display: none;
+}
+
 .header-nav__form {
   font-weight: bold;
   height: 76px;
