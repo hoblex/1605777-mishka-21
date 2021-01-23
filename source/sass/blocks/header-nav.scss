@@ -122,12 +122,25 @@
   min-width: 214px;
   padding-left: 76px;
 
-
   @media (min-width: $tablet-width) {
-    width: 18px;
-    height: 18px;
+    width: 82px;
+    height: 82px;
     display: inline-block;
     vertical-align: middle;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    .header-nav__form-icon {
+      fill: $style-color;
+    }
+  }
+
+  &:active {
+    .header-nav__form-icon {
+      fill: $style-color-30;
+    }
   }
 }
 
@@ -334,7 +347,7 @@
 }
 
 .header-nav__form-input {
-  display: none;
+  display: block;
 }
 
 @media (max-width: $mobile-width-only) {

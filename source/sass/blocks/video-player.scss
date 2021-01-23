@@ -25,7 +25,8 @@
     top: 191px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.2);
   }
 

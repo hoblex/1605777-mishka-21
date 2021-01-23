@@ -193,7 +193,9 @@
     fill: $basic-black-20;
   }
 
-  &:hover .product-card__order-icon {
+  &:hover .product-card__order-icon,
+  &:focus-within .product-card__order-icon,
+  &:focus .product-card__order-icon {
     fill: $style-color;
   }
 
