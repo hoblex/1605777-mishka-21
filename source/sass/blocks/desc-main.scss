@@ -6,12 +6,6 @@
   //min-height: 770px;
   margin-bottom: 25px;
 
-  .container {
-    box-sizing: border-box;
-
-    @include outline;
-  }
-
   @media (min-width: $tablet-width) {
     height: 520px;
     min-width: 668px;

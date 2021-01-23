@@ -8,22 +8,23 @@
   @media (min-width: $tablet-width) {
     height: 143px;
   }
+}
 
-  .container {
-    box-sizing: border-box;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      align-self: center;
-      height: 143px;
-      width: 100%;
-    }
+.footer-main__container {
+  box-sizing: border-box;
 
-    @media (min-width: $desktop-width) {
-      height: 145px;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    height: 143px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 145px;
   }
 }
 
