@@ -3,7 +3,8 @@
 var navMain = document.querySelector('.header-nav');
 var navToggle = document.querySelector('.header-nav__toggle');
 
-  navMain.classList.remove('header-nav--nojs');
+navMain.classList.remove('header-nav--nojs');
+navMain.classList.add('header-nav--closed');
 
   navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('header-nav--closed')) {

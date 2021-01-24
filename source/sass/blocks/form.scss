@@ -155,7 +155,7 @@
   line-height: 16px;
   font-weight: bold;
   color: $style-color;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   padding: 0;
   text-transform: uppercase;
   display: block;
@@ -201,7 +201,6 @@
 
   &--email::after {
     min-width: 200px;
-    //width: calc(100% - 200px);
     left: 78px;
   }
 }
@@ -332,7 +331,7 @@
 }
 
 .form__fieldset--color .form__legend {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -398,6 +397,7 @@
   display: inline-block;
   vertical-align: middle;
   height: 42px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -410,19 +410,23 @@
   &--radio,
   &--checkbox {
     display: flex;
+    font-weight: bold;
     justify-content: space-between;
     align-items: center;
+    padding-left: 60px;
   }
 
   &--radio {
     @media (min-width: $tablet-width) {
       width: 374px;
+      padding-left: 77px;
     }
   }
 
   &--checkbox {
     @media (min-width: $tablet-width) {
       min-width: 203px;
+      padding-left: 81px;
     }
   }
 
@@ -467,26 +471,6 @@
   }
 }
 
-.form__label-name--control {
-  display: flex;
-  align-items: center;
-  width: 200px;
-  height: 42px;
-  position: absolute;
-  left: 61px;
-
-  @media (min-width: $tablet-width) {
-    left: 78px;
-    width: auto;
-  }
-}
-
-.form__label--checkbox .form__label-name--control {
-  @media (min-width: $tablet-width) {
-    left: 83px;
-  }
-}
-
 .form__control {
   appearance: none;
   position: relative;
@@ -500,11 +484,14 @@
     border: 2px solid $primary-color;
     border-radius: 50%;
     outline: none;
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
 
     @media (min-width: $tablet-width) {
       width: 50px;
       height: 50px;
+      bottom: 0;
     }
 
     &::after {
@@ -545,7 +532,9 @@
     width: 38px;
     border: 2px solid $primary-color;
     outline: none;
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
 
     @media (min-width: $tablet-width) {
       width: 52px;
@@ -662,6 +651,7 @@
 
 .form__control--connect {
   padding-right: 40px;
+  box-sizing: border-box;
 
   &:focus-within + .form__control-icon,
   &:focus + .form__control-icon,

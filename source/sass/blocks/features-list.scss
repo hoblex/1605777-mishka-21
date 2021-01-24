@@ -11,11 +11,11 @@
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     min-height: 119px;
   }
 
   @media (min-width: $desktop-width) {
-    //width: 50%;
     width: 1150px;
     margin-right: auto;
     margin-left: auto;
@@ -43,6 +43,7 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    overflow: hidden;
 
     @media (min-width: $tablet-width) {
       height: 107px;

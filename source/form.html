@@ -11,7 +11,7 @@
 <body class="page-body">
 <header class="page-header">
   <h1 class="visually-hidden">Сайт магазина Мишка</h1>
-  <nav class="header-nav header-nav--closed header-nav--nojs">
+  <nav class="header-nav header-nav--nojs">
     <a class="header-nav__logo-link" href="index.html" aria-label="Главная страница">
       <picture class="header-nav__logo-image">
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -55,20 +55,44 @@
     <fieldset class="container form__fieldset form__fieldset--type">
       <legend class="form__legend"><span class="form__legend-name">Тип</span></legend>
       <div class="form__legend-container">
-        <label class="form__label form__label--radio"><input class="form__control form__control--radio" type="radio" name="product-type" value="interior" checked><span class="form__label-name form__label-name--control">Аксессуар для интерьера</span></label>
-        <label class="form__label form__label--radio"><input class="form__control form__control--radio" type="radio" name="product-type" value="toy"><span class="form__label-name form__label-name--control">Детская игрушка</span></label>
+        <label class="form__label form__label--radio">
+          <input class="form__control form__control--radio" type="radio" name="product-type" value="interior" checked>
+          Аксессуар для интерьера
+        </label>
+        <label class="form__label form__label--radio">
+          <input class="form__control form__control--radio" type="radio" name="product-type" value="toy">
+          Детская игрушка
+        </label>
       </div>
     </fieldset>
     <div class="form__fieldset-container form__fieldset-container--color">
       <fieldset class="form__fieldset form__fieldset--color">
         <legend class="form__legend"><span class="form__legend-name">Цвет</span></legend>
         <div class="form__legend-container">
-          <label class="form__label form__label--checkbox"><input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="white" checked><span class="form__label-name form__label-name--control">Белый</span></label>
-          <label class="form__label form__label--checkbox"><input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="gray" checked><span class="form__label-name form__label-name--control">Серый</span></label>
-          <label class="form__label form__label--checkbox"><input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="tiffani"><span class="form__label-name form__label-name--control">&laquo;Тиффани&raquo;</span></label>
-          <label class="form__label form__label--checkbox"><input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="black"><span class="form__label-name form__label-name--control">Черный</span></label>
-          <label class="form__label form__label--checkbox"><input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="pink"><span class="form__label-name form__label-name--control">Розовый</span></label>
-          <label class="form__label form__label--checkbox"><input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="orange"><span class="form__label-name form__label-name--control">Оранжевый</span></label>
+          <label class="form__label form__label--checkbox">
+            <input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="white" checked>
+            Белый
+          </label>
+          <label class="form__label form__label--checkbox">
+            <input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="gray" checked>
+            Серый
+          </label>
+          <label class="form__label form__label--checkbox">
+            <input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="tiffani">
+            &laquo;Тиффани&raquo;
+          </label>
+          <label class="form__label form__label--checkbox">
+            <input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="black">
+            Черный
+          </label>
+          <label class="form__label form__label--checkbox">
+            <input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="pink">
+            Розовый
+          </label>
+          <label class="form__label form__label--checkbox">
+            <input class="form__control form__control--checkbox" type="checkbox" name="product-color" value="orange">
+            Оранжевый
+          </label>
         </div>
       </fieldset>
     </div>
