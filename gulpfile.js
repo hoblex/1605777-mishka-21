@@ -147,8 +147,8 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   gulp.parallel(
-    html,
     styles,
+    html,
     scripts,
     sprite,
     copy,
